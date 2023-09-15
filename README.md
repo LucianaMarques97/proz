@@ -10,3 +10,12 @@
 * David
 * João Ricardo
 
+## Contato
+* Luciana
+- [GitHub](https://github.com/LucianaMarques97)
+
+* Rafael Antonio
+* [GitHub](https://github.com/RafaelMoreiraDev)
+* joão Ricardo Pinto Lucas
+* [GitHub](https://github.com/jricardo81) 
+
