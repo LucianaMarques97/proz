@@ -12,10 +12,11 @@
 
 ## Contato
 * Luciana
-- [GitHub](https://github.com/LucianaMarques97)
-
+* [GitHub](https://github.com/LucianaMarques97)
 * Rafael Antonio
 * [GitHub](https://github.com/RafaelMoreiraDev)
+* David
+* [Github](https://github.com/davidfjr)
 * joão Ricardo Pinto Lucas
-* [GitHub](https://github.com/jricardo81) 
+* [GitHub](https://github.com/jricardo81)
 
