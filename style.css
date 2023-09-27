@@ -1,10 +1,9 @@
 
 body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1440px;
-    background: #DDC8FF;
     
 }
 
@@ -16,6 +15,11 @@ h1, h2, p, a{
 
 a{
     text-decoration: none;
+
+}
+
+li{
+  list-style: none;
 }
 .menu {
     display: flex;
@@ -24,12 +28,12 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
     padding:0px 40px;
-    margin-bottom: 163px;
+    /* margin-bottom: 163px; */
     
     
   }
   
-  .menu div {
+  .link {
     display: flex;
     gap: 39px;
     padding-right: 60px;
@@ -51,14 +55,17 @@ a{
   }
  
   
-  main h2{
-    display: flex;
+   
+
+.mais-vendidos-titulo{
+  padding-top: 163px;
+   display: flex;
     justify-content: center;
     background: #DDC8FF;
     padding-bottom: 107px;
     font-size: 46px;
-    
-  }
+     
+}
 
   .produto-mais-vendido{
     display: flex;
@@ -66,9 +73,12 @@ a{
     gap: 84px;
     padding: 0px 0px 89px 59px;
     font-size: 40px;
+    flex-wrap: wrap;
+    background: #DDC8FF;
+
   }
   
-  .produto {
+  .produto-blusa {
     display: block;
     font-size: 42px;
     text-align: center;
@@ -81,12 +91,124 @@ a{
     display: flex;
     align-items: center;
     background: #C3AEFF;
+    
   }
   
-  .categoria-blusa ul li{
+  .categoria-blusa ul{
     display: flex;
-    
+    padding-bottom: 155px;
+    padding-left: 59px;
+    gap: 59px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+    flex-direction: row;
     
   }
 
+
   
+.lista-produto img {
+    flex: 0 0 auto;
+    width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+    scroll-snap-align: start;
+  }
+
+
+  
+  .produto-calca {
+    display: block;
+    font-size: 42px;
+    text-align: center;
+    background: #DDC8FF;
+    padding: 185px 0px 45px 0px;
+  }
+
+
+  footer p{
+    font-size: 24px;
+    padding: 57px 0px 10px 0px;
+    display: inline-block;
+    justify-items: center;
+  }
+
+
+  .categoria-calca {
+    display: flex;
+    align-items: center;
+    background: #DDC8FF;
+    
+  }
+  
+  .categoria-calca ul{
+    display: flex;
+    padding-bottom: 155px;
+    padding-left: 59px;
+    gap: 59px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+  }
+
+
+
+  .produto-sapato {
+    display: block;
+    font-size: 42px;
+    text-align: center;
+    background: #C3AEFF;
+    padding: 185px 0px 45px 0px;
+  }
+
+
+  .categoria-sapato {
+    display: flex;
+    align-items: center;
+    background: #C3AEFF;
+    
+  }
+  
+  .categoria-sapato ul{
+    display: flex;
+    padding-bottom: 155px;
+    padding-left: 59px;
+    gap: 59px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+  }
+  footer{
+    background: #554DBE;
+    
+  }
+  footer h2{
+    padding: 18px 0px 10px 43px;
+  }
+
+
+  .menu-footer{
+    display: flex;
+    background: #554DBE;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0px 40px;
+  }
+
+
+  .link{
+    display: flex;
+    gap: 39px;
+    padding-right: 60px;
+    position: relative;
+  }
+
+  footer p{
+    display: grid;
+    font-size: 24px;
+    padding: 57px 0px 11px 0px; 
+  }
