@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1440px;
+    background: #DDC8FF;
     
 }
 
@@ -23,6 +24,7 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
     padding:0px 40px;
+    margin-bottom: 163px;
     
     
   }
@@ -35,14 +37,56 @@ a{
   
   }
   
+  .menu a{
+    font-size: 25px;
+  }
+  
   .detalhe {
     position: absolute;
-    left: 150px;
-    top: 5px;
+    left: 210px;
+    top: 13px;
     border-left: 6px solid transparent; /* Largura da seta */
     border-right: 6px solid transparent; /* Largura da seta */
     border-top: 8px solid #000; /* Cor da seta */
   }
  
   
+  main h2{
+    display: flex;
+    justify-content: center;
+    background: #DDC8FF;
+    padding-bottom: 107px;
+    font-size: 46px;
+    
+  }
+
+  .produto-mais-vendido{
+    display: flex;
+    align-items: center;
+    gap: 84px;
+    padding: 59px;
+    font-size: 40px;
+  }
+  
+  .produto {
+    display: block;
+    font-size: 42px;
+    text-align: center;
+    background: #C3AEFF;
+    padding: 185px 0px 45px 0px;
+  }
+
+
+  .categoria-blusa {
+    display: flex;
+    align-items: center;
+    background: #C3AEFF;
+  }
+  
+  .categoria-blusa ul li{
+    display: flex;
+    
+    
+  }
+
   
