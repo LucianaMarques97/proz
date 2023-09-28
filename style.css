@@ -40,6 +40,11 @@ li{
     position: relative;
   
   }
+
+.categoria{
+  position: relative;
+}
+  
   
   .menu a{
     font-size: 25px;
@@ -49,13 +54,35 @@ li{
     position: absolute;
     left: 210px;
     top: 13px;
-    border-left: 6px solid transparent; /* Largura da seta */
-    border-right: 6px solid transparent; /* Largura da seta */
-    border-top: 8px solid #000; /* Cor da seta */
+    border-left: 6px solid transparent; 
+    border-right: 6px solid transparent; 
+    border-top: 8px solid #000; 
+
   }
  
+  .submenu a{
+    font-size: 20px;
+  }
+
+  .submenu{
+    display: none;
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    gap: 15px;
+    z-index: 1;
+
+  }
+
   
-   
+ 
+  .categoria:hover + .submenu{
+    display: flex;
+  }
+
+
+  
+  
 
 .mais-vendidos-titulo{
   padding-top: 163px;
@@ -66,6 +93,9 @@ li{
     font-size: 46px;
      
 }
+
+
+
 
   .produto-mais-vendido{
     display: flex;
@@ -199,12 +229,26 @@ li{
     padding:0px 40px;
   }
 
+  .detalhe-footer {
+    position: absolute;
+    left: 210px;
+    top: 13px;
+    border-left: 6px solid transparent; /* Largura da seta */
+    border-right: 6px solid transparent; /* Largura da seta */
+    border-top: 8px solid #000; /* Cor da seta */
+  }
 
-  .link{
+  .link-footer {
     display: flex;
     gap: 39px;
     padding-right: 60px;
     position: relative;
+  
+  }
+
+
+  .menu-footer a{
+    font-size: 25px;
   }
 
   footer p{
