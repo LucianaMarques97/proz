@@ -19,7 +19,7 @@ a{
 }
 img {
   border-radius: 8px;
-  border: 1px solid salmon;
+  border: 1px solid rgba(226, 78, 62, 0.333);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* offsetX, offsetY, blur, color */
   /* Ajuste outros estilos da imagem, se necessário */
 }
@@ -83,13 +83,15 @@ li{
     border:0.1 solid;
     padding: 3px;
     border-radius: 4px;
+    padding-right: 8px;
   }
 
   .submenu{
     display: none;
     position: absolute;
     
-    left: 97px;
+    
+    left: 95px;
     top: 45px;
     gap: 15px;
     z-index: 1;
@@ -107,11 +109,11 @@ li{
   
 
 .mais-vendidos-titulo{
-  padding-top: 163px;
+  padding-top: 100px;
    display: flex;
     justify-content: center;
     background: #DDC8FF;
-    padding-bottom: 107px;
+    padding-bottom: 80px;
     font-size: 46px;
      
 }
