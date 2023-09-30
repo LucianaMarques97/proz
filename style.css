@@ -99,7 +99,7 @@ li{
 
 
 .mais-vendidos-titulo{
-  padding-top: 100px;
+  padding-top: 80px;
    display: flex;
     justify-content: center;
     background: #DDC8FF;
@@ -239,12 +239,12 @@ li{
     
   }
   footer h2{
-    padding: 18px 0px 10px 43px;
+    padding: 18px 0px 0px 43px;
   }
 
   i{
   color:  #000;
-  margin: 3px;
+  margin: 2px;
   }
   i:hover{
     animation: translateY 0.8s infinite alternate;
@@ -286,6 +286,6 @@ li{
 
   footer p{
     display: grid;
-    font-size: 24px;
-    padding: 57px 0px 11px 0px; 
+    font-size: 16px;
+    padding: 20px 0px 11px 0px; 
   }
