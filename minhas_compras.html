@@ -4,36 +4,38 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <title>Lu Modas</title>
+  <title>Lu Modas- Minhas compras</title>
 </head>
 <body>
-<div class="header">
-    <!---Cabeçalho-->
-    <header>
-      <nav class="menu">
-        <a href="./home.html">
-          <img src="./img/logo.svg" alt="imagem da loja">
-        </a>
-    
-        <div class="link">
-          <a href="./home.html">Inicio</a>
-          <a href="./categoria.html">Categoria</a>
-          <span class="detalhe"></span>
-          <a href="./carrinho.html">Carrinho</a>
-          <a href="./pagamento.html">Pagamento</a>
-          <a href="./minhas_compras.html">Minhas Compras</a>
-        </div>
-    
-      </nav>
-    
-    </header>
-</div>
+<header>
+  <nav class="menu">
+    <a href="#">
+      <img src="./img/logo.svg" alt="imagem da loja">
+    </a>
+    <div class="dp-menu">
+    <ul>
+      <li><a href="./home.html">Inicio</a></li>
+      <li><a href="./categoria.html">Categoria</a>
+        <ul>
+          <li><a href="./categoria.html">Blusa</a></li>
+          <li><a href="./categoria.html">Calça</a></li>
+          <li><a href="./categoria.html">Sapato</a></li>
+        </ul>
+      </li>
+      <li><a href="./carrinho.html">Carrinho</a></li>
+      <li><a href="./pagamento.html">Pagamento</a></li>
+      <li><a href="./minhas_compras.html">Minhas Compras</a></li>
+    </ul>
+  </div>
+
+  </nav>
+
+</header>
 
 
-
-<section id="minhas_compras">
+<section class="minhas_compras">
   <h2>Minhas Compras</h2>
-  <article>
+  <article class="produto-vendido">
     <div>
       <a href="#">
         <img src="./img/calca_minhas_compras.jpg" 
@@ -41,7 +43,7 @@
       </a>
     </div>
   
-    <div>
+    <div class="desc-produto-vendido">
       <p>Produto: <span>Calça amarela</span></p>
       <p>Tamanho: <span>M</span></p>
       <p>Cor: <span>Amarela</span></p>
@@ -49,7 +51,7 @@
     </div>
   </article>
 
-  <article>
+  <article class="produto-vendido">
     <div>
       <a href="#">
         <img src="./img/camisa_minhas_compras.jpg" 
@@ -57,7 +59,7 @@
       </a>
     </div>
   
-    <div>
+    <div class="desc-produto-vendido">
       <p>Produto: <span>Camisa Polo Branca</span></p>
       <p>Tamanho: <span>M</span></p>
       <p>Cor: <span>Branca</span></p>
@@ -65,7 +67,8 @@
     </div>
   </article>
 
-  <article>
+  <article class="produto-vendido">
+
     <div>
       <a href="#">
         <img src="./img/sapato_minhas_compras.jpg" 
@@ -73,7 +76,7 @@
       </a>
     </div>
   
-    <div>
+    <div class="desc-produto-vendido">
       <p>Produto: <span>Sapato Preto</span></p>
       <p>Tamanho: <span>35</span></p>
       <p>Cor: <span>Preto</span></p>
@@ -87,9 +90,11 @@
  <footer>
 
     
-  <h2>Contato</h2>
+    
   <div class="menu-footer">
+    
     <div class="footer-icons">
+      <h2>Contato</h2>
       <a href="#">
         <i class="fa-brands fa-instagram fa-2x"></i>
       </a>    
@@ -103,16 +108,16 @@
 
     <nav>
 
-      <div class="link-footer">
-        <a href="#">Inicio</a>
-        <a href="./categoria.html">Categoria</a>
-        <span class="detalhe-footer"></span>
-        <a href="./carrinho.html">Carrinho</a>
-        <a href="./pagamento.html">Pagamento</a>
-        <a href="./minhas_compras.html">Minhas Compras</a>
+      <div class="dp-menu">
+        <ul>
+          <li><a href="./home.html">Inicio</a></li>
+          <li><a href="./carrinho.html">Carrinho</a></li>
+          <li><a href="./pagamento.html">Pagamento</a></li>
+          <li><a href="./minhas_compras.html">Minhas Compras</a></li>
+        </ul>
       </div>
 
-    </nav>
+  </nav>
   </div>
 
   <p>Copyright &copy; Todos os Direitos Reservados</p>

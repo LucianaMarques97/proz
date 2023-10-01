@@ -1,112 +1,108 @@
 
 body{
-    margin: 0 auto;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 1440px;
-    
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  
+}
+h2{
+display: flex;
+justify-content: center;
 }
 
 h1, h2, p, a{
-    padding: 0px;
-    margin: 0px;
-    color: #000;
+  padding: 0px;
+  margin: 0px;
+  color: #000;
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 
 }
 img {
-  border-radius: 8px;
-  border: 1px solid rgba(226, 78, 62, 0.333);
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* offsetX, offsetY, blur, color */
-  /* Ajuste outros estilos da imagem, se necessário */
+border-radius: 8px;
+border: 1px solid rgba(226, 78, 62, 0.333);
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 
 
 li{
-  list-style: none;
+list-style: none;
 }
+
+.desc-produto p, span{
+text-shadow: 4px 4px 15px rgba(128, 128, 128, 0.63);
+}
+
 .menu {
-    display: flex;
-    background: #554DBE;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding:0px 40px;
-    
-    
-    
-  }
-  .menu img{
-    border: none;
-    box-shadow: none;
-  }
+  display: flex;
+  background: #554DBE;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:0px 40px;
   
   
-  .link {
-    display: flex;
-    gap: 39px;
-    padding-right: 60px;
-    position: relative;
   
-  }
-
-.categoria{
-  position: relative;
 }
-  
-  
-  .link a{
-    font-size: 25px;
-    border:0.1 solid;
-    padding: 10px 18px;
-    border-radius: 4px;
-    background: #C3AEFF;
-    
-  }
-  
-  .detalhe {
-    position: absolute;
-    left: 265px;
-    top: 23px;
-    border-left: 6px solid transparent; 
-    border-right: 6px solid transparent; 
-    border-top: 8px solid #000; 
+.menu img{
+  border: none;
+  box-shadow: none;
+}
 
-  }
- 
-  .submenu a{
-    font-size: 16px;
-    border:0.1 solid;
-    padding: 3px;
-    border-radius: 4px;
-    padding-right: 8px;
-  }
+.dp-menu ul li{
+display: inline;
+position: relative;
+gap: 0px;
+}
 
-  .submenu{
-    display: none;
-    position: absolute;
-    
-    
-    left: 95px;
-    top: 45px;
-    gap: 15px;
-    z-index: 1;
+.dp-menu ul li a{
+background: #00000035;
+color: #000;
+padding: 8px 14px;
+display: inline-block;
+border-radius: 1px;
+font-size: 28px;
 
-  }
+}
 
-  
- 
-  .categoria:hover + .submenu{
-    display: flex;
-  }
+.dp-menu ul li a:hover{
+background: #000;
+color: #554DBE;
+transition: background 0.6s;
+scale: calc(1.02);
+
+}
+.dp-menu ul ul{
+display: none;
+left: -40px;
+position: absolute;
+
+}
 
 
-  
-  
+.dp-menu ul li:hover ul{
+display: block;
+width: 100%;
+
+
+}
+
+
+.dp-menu ul ul li{
+display: inline;
+
+}
+
+.dp-menu ul ul li a{
+display: block;
+
+}
 
 .mais-vendidos-titulo{
   padding-top: 100px;
@@ -164,7 +160,7 @@ li{
   
 .lista-produto img {
     flex: 0 0 auto;
-    width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+    width: 100%; 
     scroll-snap-align: start;
   }
 
@@ -186,7 +182,6 @@ li{
     justify-items: center;
   }
 
-
   .categoria-calca {
     display: flex;
     align-items: center;
@@ -205,8 +200,6 @@ li{
     flex-direction: row;
     
   }
-
-
 
   .produto-sapato {
     display: block;
@@ -235,14 +228,44 @@ li{
     flex-direction: row;
     
   }
+
+  
   footer{
     background: #554DBE;
     
   }
-  footer h2{
-    padding: 18px 0px 10px 43px;
+  footer h2 {
+    font-size: 24px;
+    padding: 14px 0px;
+    display: flex;
+    justify-content: center;
+}
+  footer .dp-menu{
+    padding-right: 18px;
   }
 
+  .footer-icons{
+    margin-right: 120px;
+  }
+
+  .footer-icons a i {
+    font-size: 2.2rem; 
+  }
+
+  
+  i:hover{
+    animation: translateY 0.8s infinite alternate;
+    
+  }
+
+  @keyframes translateY {
+    from {
+      transform: translateY(0) scale(1);
+    }
+    to {
+      transform: translateY(-8px) scale(1.1);
+    }
+  }
 
   .menu-footer{
     display: flex;
@@ -250,33 +273,65 @@ li{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:0px 40px;
+    padding: 0px 40px;
   }
 
-  .detalhe-footer {
-    position: absolute;
-    left: 210px;
-    top: 13px;
-    border-left: 6px solid transparent; /* Largura da seta */
-    border-right: 6px solid transparent; /* Largura da seta */
-    border-top: 8px solid #000; /* Cor da seta */
-  }
 
-  .link-footer {
-    display: flex;
-    gap: 39px;
-    padding-right: 60px;
-    position: relative;
   
-  }
-
-
   .menu-footer a{
     font-size: 25px;
+
   }
 
   footer p{
     display: grid;
-    font-size: 24px;
-    padding: 57px 0px 11px 0px; 
+    font-size: 16px;
+    padding: 20px 0px 11px 0px; 
+  }
+
+
+
+  
+  /* Estilização da página minhas_compras*/
+
+  .minhas_compras{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-bottom: 140px;
+    background-color: #DDC8FF;
+  }
+  
+  .minhas_compras h2{
+    padding-top: 80px;
+   display: flex;
+    justify-content: center;
+    background: #DDC8FF;
+    padding-bottom: 80px;
+    font-size: 46px;
+  }
+  .produto-vendido {
+    margin-left: 120px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-left: 20px; /* Ajuste a quantidade de espaço entre a borda esquerda da tela e a imagem */
+  }
+  
+  .desc-produto-vendido {
+    padding: 20px; /* Ajuste a quantidade de espaço entre a imagem e o texto conforme desejado */
+    background-color: #C3AEFF;
+    flex-grow: 1; /* Permite que o elemento se expanda e ocupe o espaço restante na linha */
+    padding-right: 20px; /* Ajuste o espaçamento da borda direita para se estender até a margem direita */
+  }
+  
+  .desc-produto-vendido p {
+    font-size: 36px;
+  }
+  
+  .desc-produto-vendido{
+    padding-left: 60px;
+    width: 40px auto;
+    background-color: #C3AEFF;
+
   }
