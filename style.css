@@ -105,7 +105,7 @@ display: block;
 }
 
 .mais-vendidos-titulo{
-  padding-top: 100px;
+  padding-top: 80px;
    display: flex;
     justify-content: center;
     background: #DDC8FF;
@@ -113,9 +113,22 @@ display: block;
     font-size: 46px;
      
 }
-
-
-
+.botao-comprar{
+  background: #00000035;
+  color: #000;
+  padding: 8px 14px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 28px;
+  
+}
+.botao-comprar:hover{
+  background: #000;
+  color: #554DBE;
+  scale: calc(1.08);
+  transition: background .5s;
+  
+}
 
   .produto-mais-vendido{
     display: flex;
@@ -125,7 +138,6 @@ display: block;
     font-size: 40px;
     flex-wrap: wrap;
     background: #DDC8FF;
-
   }
   
   .produto-blusa {
@@ -135,7 +147,6 @@ display: block;
     background: #C3AEFF;
     padding: 185px 0px 45px 0px;
   }
-
 
   .categoria-blusa {
     display: flex;
@@ -155,9 +166,7 @@ display: block;
     flex-direction: row;
     
   }
-
-
-  
+ 
 .lista-produto img {
     flex: 0 0 auto;
     width: 100%; 
