@@ -167,6 +167,9 @@ display: block;
     
   }
  
+ 
+
+
 .lista-produto img {
     flex: 0 0 auto;
     width: 100%; 
@@ -324,14 +327,14 @@ display: block;
     display: flex;
     gap: 40px;
     align-items: center;
-    padding-left: 20px; /* Ajuste a quantidade de espaço entre a borda esquerda da tela e a imagem */
+    padding-left: 20px; 
   }
   
   .desc-produto-vendido {
-    padding: 20px; /* Ajuste a quantidade de espaço entre a imagem e o texto conforme desejado */
+    padding: 20px;
     background-color: #C3AEFF;
-    flex-grow: 1; /* Permite que o elemento se expanda e ocupe o espaço restante na linha */
-    padding-right: 20px; /* Ajuste o espaçamento da borda direita para se estender até a margem direita */
+    flex-grow: 1;
+    padding-right: 20px;
   }
   
   .desc-produto-vendido p {
