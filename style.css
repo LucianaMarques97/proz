@@ -369,5 +369,12 @@ display: block;
     padding: 20px;
     background-color: #C3AEFF;
     flex-grow: 1;
-    padding-right: 20px;;
+    padding-right: 20px;
   } 
+
+  .inserir-dados {
+    padding: 20px;
+    background-color: #C3AEFF;
+    flex-grow: 1;
+    padding-right: 20px;
+  }
