@@ -62,7 +62,7 @@ gap: 0px;
 }
 
 .dp-menu ul li a{
-background: #00000035;
+background: #554DBE;
 color: #000;
 padding: 8px 14px;
 display: inline-block;
@@ -393,7 +393,7 @@ display: block;
     display: flex;
     flex-direction: column;
     background-color: #C3AEFF;
-    padding: 50PX;
+    padding: 110PX;
     gap: 80px;
   }
   .titulo-pagamento h1 {
@@ -415,9 +415,9 @@ display: block;
     display: flex;
     background-color: #C3AEFF;
     justify-content: center;
-    padding-top: 300px;
-
+    padding-top: 600px;
   } 
+
   .pagamento-formas a img {
     width: 120px;
     height: 70px;
