@@ -47,7 +47,6 @@
             placeholder="Ex.: Mario Q Silva"
             name="nome"
         />
-        <br>
         <label for="nome">Número do cartão: </label>
         <input
             type="text"
@@ -55,8 +54,8 @@
             placeholder="Ex.: 2222 3333 4444 5555"
             numero="numero"
         />
-        <br>
-        <label for="data">Data de vencimento: </label>
+        <div class="data-codigo">
+          <label for="data">Data de vencimento: </label>
         <input
             type="text"
             id="data"
@@ -70,6 +69,8 @@
             placeholder="Ex.: 345"
             codigo="código"
         />
+        </div>
+        
         <label for="parcelas">Qtd de Parcelas:</label>
         <select id="parcelas" name="parcelas">
             <option value="1">1x</option>

@@ -401,13 +401,29 @@ display: block;
   .inserir-dados {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 20px;
+    align-items: center;
     background-color: #C3AEFF;
+    
   }
 
-  .inserir-dados input, select{
+  .inserir-dados input, select, label{
     display: flex;
     width: 500px;
-    
+  }
+
+  .inserir-dados input {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .data-codigo {
+    display: flex;
+    justify-content: center;
+    width: 0px;
+    gap: 10px;
+  }
+  .data-codigo label {
+    display: flex;
+    justify-items: left;
   }
