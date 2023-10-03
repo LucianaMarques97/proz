@@ -105,7 +105,7 @@ display: block;
 }
 
 .mais-vendidos-titulo{
-  padding-top: 80px;
+  padding-top: 120px;
    display: flex;
     justify-content: center;
     background: #DDC8FF;
@@ -120,13 +120,15 @@ display: block;
   display: inline-block;
   border-radius: 4px;
   font-size: 28px;
+  transition:.5s;
   
 }
 .botao-comprar:hover{
   background: #000;
   color: #554DBE;
   scale: calc(1.08);
-  transition: background .5s;
+  
+  
   
 }
 
@@ -138,6 +140,16 @@ display: block;
     font-size: 40px;
     flex-wrap: wrap;
     background: #DDC8FF;
+    transition: 0.5s;
+  }
+  
+  .produto-mais-vendido div a img{
+    transition: 0.5s;
+  }
+
+  .produto-mais-vendido div a img:hover{
+  
+    transform: scale(1.02);
   }
   
   .produto-blusa {
@@ -164,11 +176,24 @@ display: block;
     scroll-snap-type: x mandatory;
     justify-content: flex-start;
     flex-direction: row;
+    transition: .3s;
     
   }
- 
- 
 
+  .categoria-blusa ul li:hover{
+    transition: .5s;
+    transform: scale(1.02);
+  }
+ 
+  .categoria-calca ul li:hover{
+    transition: .5s;
+    transform: scale(1.02);
+  }
+ 
+  .categoria-sapato ul li:hover{
+    transition: .5s;
+    transform: scale(1.02);
+  }
 
 .lista-produto img {
     flex: 0 0 auto;
@@ -360,7 +385,7 @@ display: block;
 
 
 
-  
+
 
   /*Estilização da Pagina Pagamento*/
 
