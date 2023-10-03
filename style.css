@@ -388,3 +388,51 @@ display: block;
 
 
   /*Estilização da Pagina Pagamento*/
+
+  .titulo-pagamento {
+    display: flex;
+    flex-direction: column;
+    background-color: #C3AEFF;
+    padding: 50PX;
+    gap: 80px;
+  }
+  .titulo-pagamento h1 {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .pagamento-formas {
+    display: flex;
+    justify-content: center;
+    background-color: #C3AEFF;
+    height: 100px;
+    padding-top: 20px;
+    gap: 10px;
+  } 
+
+  .forma-pagamento {
+    display: flex;
+    background-color: #C3AEFF;
+    justify-content: center;
+    padding-top: 300px;
+
+  } 
+  .pagamento-formas a img {
+    width: 120px;
+    height: 70px;
+  }
+
+  .inserir-dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #C3AEFF;
+  }
+
+  .inserir-dados input, select{
+    display: flex;
+    width: 500px;
+    
+  }
