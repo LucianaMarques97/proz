@@ -363,3 +363,11 @@ display: block;
   
 
   /*Estilização da Pagina Pagamento*/
+
+  .pagamento-formas {
+    display: ;
+    padding: 20px;
+    background-color: #C3AEFF;
+    flex-grow: 1;
+    padding-right: 20px;;
+  } 
