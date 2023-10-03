@@ -3,7 +3,7 @@ body{
   margin: 0 auto;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 1440px;
+  max-width: 1540px;
   margin: 0 auto;
   
 }
@@ -45,7 +45,7 @@ text-shadow: 4px 4px 15px rgba(128, 128, 128, 0.63);
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding:0px 40px;
+  padding: 0px 10px;
   
   
   
@@ -105,12 +105,12 @@ display: block;
 }
 
 .mais-vendidos-titulo{
-  padding-top: 120px;
-   display: flex;
-    justify-content: center;
-    background: #DDC8FF;
-    padding-bottom: 80px;
-    font-size: 46px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  background: #DDC8FF;
+  padding-bottom: 40px;
+  font-size: 40px;
      
 }
 .botao-comprar{
@@ -119,7 +119,7 @@ display: block;
   padding: 8px 14px;
   display: inline-block;
   border-radius: 4px;
-  font-size: 28px;
+  font-size: 25px;
   transition:.5s;
   
 }
@@ -135,9 +135,9 @@ display: block;
   .produto-mais-vendido{
     display: flex;
     align-items: center;
-    gap: 84px;
+    gap: 50px;
     padding: 0px 0px 89px 59px;
-    font-size: 40px;
+    font-size: 30px;
     flex-wrap: wrap;
     background: #DDC8FF;
     transition: 0.5s;
@@ -154,10 +154,10 @@ display: block;
   
   .produto-blusa {
     display: block;
-    font-size: 42px;
+    font-size: 40px;
     text-align: center;
     background: #C3AEFF;
-    padding: 185px 0px 45px 0px;
+    padding: 15px 0px 45px 0px;
   }
 
   .categoria-blusa {
@@ -208,7 +208,7 @@ display: block;
     font-size: 42px;
     text-align: center;
     background: #DDC8FF;
-    padding: 185px 0px 45px 0px;
+    padding: 15px 0px 45px 0px;
   }
 
 
@@ -243,7 +243,7 @@ display: block;
     font-size: 42px;
     text-align: center;
     background: #C3AEFF;
-    padding: 185px 0px 45px 0px;
+    padding: 15px 0px 45px 0px;
   }
 
 
@@ -399,6 +399,7 @@ display: block;
   .titulo-pagamento h1 {
     display: flex;
     justify-content: center;
+    font-size: 40px;
     
   }
 
@@ -434,7 +435,8 @@ display: block;
 
   .inserir-dados input, select, label{
     display: flex;
-    width: 500px;
+    width: 800px;
+    font-size: 20px;
   }
 
   .inserir-dados input {
@@ -445,8 +447,8 @@ display: block;
   .data-codigo {
     display: flex;
     justify-content: center;
-    width: 0px;
-    gap: 10px;
+    width: 15px;
+    gap: 20px;
   }
   .data-codigo label {
     display: flex;
