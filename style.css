@@ -78,6 +78,7 @@ transition: background 0.6s;
 scale: calc(1.02);
 
 }
+
 .dp-menu ul ul{
 display: none;
 left: -40px;
@@ -382,9 +383,39 @@ display: block;
 
 
   /*Estilização da Pagina Carrinho*/
+  .total-pagamento{
+    display: flex;
+    margin-left: 140px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .total-pagamento h3, span{
+    font-size: 28px;
+  }
 
 
-
+ 
+  .btn-pagamento{
+    display: flex;
+    width: 145px;
+    margin: 24px 0px;
+    background: #554DBE;
+    color: #000;
+    padding: 14px 10px;
+    display: inline-block;
+    border-radius: 1px;
+    font-size: 28px;
+    
+    }
+    
+    .btn-pagamento:hover{
+    background: #000;
+    color: #554DBE;
+    transition: background 0.6s;
+    scale: calc(1.02);
+    
+    }
 
 
   /*Estilização da Pagina Pagamento*/
