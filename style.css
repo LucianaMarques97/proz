@@ -422,6 +422,13 @@ display: block;
     }
 
 
+    .inserir-dados .btn-pagamento{
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      margin-left: 600px;
+    }
+
   /*Estilização da Pagina Pagamento*/
 
   .titulo-pagamento {
@@ -468,22 +475,44 @@ display: block;
     
   }
 
-  .inserir-dados input, select, label{
+  .inserir-dados input,label{
     display: flex;
     width: 800px;
     font-size: 20px;
   }
 
+  label{
+    padding-bottom: 10px;
+  }
+
+
+  .inserir-dados select{
+   margin-top: 10px;    margin-right: 750px;
+    height: 60px;
+    width: 60px;
+    font-size: 18px;
+    border: 1px solid #0000rgba(0, 0, 0, 0.5);
+  }
+
+  
+
+  
+
   .inserir-dados input {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    display: flex;
+    /* padding-bottom: 20px;
+    margin-bottom: 20px; */
+    align-content: center;
+    width: 800px;
+    height: 51px;
+    margin-bottom: 16px;
   }
 
   .data-codigo {
     display: flex;
     justify-content: center;
     width: 15px;
-    gap: 20px;
+    gap: 38px;
   }
   .data-codigo label {
     display: flex;
