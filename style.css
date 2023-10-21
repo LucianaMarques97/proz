@@ -107,7 +107,7 @@ display: block;
 
 .mais-vendidos-titulo{
   background-image: url(./img/onda.svg)!important;
-  padding-top: 50px;
+  padding-top: 80px;
   display: flex;
   justify-content: center;
   background: #DDC8FF;
@@ -139,7 +139,7 @@ display: block;
     display: flex;
     align-items: center;
     gap: 50px;
-    padding: 0px 0px 89px 59px;
+    padding: 25px 0px 89px 59px;
     font-size: 30px;
     flex-wrap: wrap;
     background: #DDC8FF;
@@ -332,7 +332,7 @@ display: block;
 
 
   
-  /* Estilização da página minhas_compras*/
+  /* Estilização da página minhas_compras e carrinho*/
 
   .minhas_compras{
     display: flex;
@@ -385,6 +385,8 @@ display: block;
 
 
   /*Estilização da Pagina Carrinho*/
+
+
   .total-pagamento{
     display: flex;
     margin-left: 140px;
