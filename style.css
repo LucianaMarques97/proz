@@ -55,6 +55,11 @@ text-shadow: 4px 4px 15px rgba(128, 128, 128, 0.63);
   box-shadow: none;
 }
 
+.img-mais-vendido{
+  width: 240px;
+  height: 250px;
+}
+
 .dp-menu ul li{
 display: inline;
 position: relative;
@@ -139,7 +144,7 @@ display: block;
     display: flex;
     align-items: center;
     gap: 50px;
-    padding: 25px 0px 89px 59px;
+    padding: 20px 0px 69px 79px;
     font-size: 30px;
     flex-wrap: wrap;
     background: #DDC8FF;
@@ -172,7 +177,7 @@ display: block;
   
   .categoria-blusa ul{
     display: flex;
-    padding-bottom: 155px;
+    padding-bottom: 80px;
     padding-left: 59px;
     gap: 59px;
     overflow-x: scroll;
@@ -204,6 +209,11 @@ display: block;
     scroll-snap-align: start;
   }
 
+  li img{
+    width: 240px;
+  height: 250px;
+  }
+
 
   
   .produto-calca {
@@ -231,7 +241,7 @@ display: block;
   
   .categoria-calca ul{
     display: flex;
-    padding-bottom: 155px;
+    padding-bottom: 80px;
     padding-left: 59px;
     gap: 59px;
     overflow-x: scroll;
@@ -259,7 +269,7 @@ display: block;
   
   .categoria-sapato ul{
     display: flex;
-    padding-bottom: 155px;
+    padding-bottom: 80px;
     padding-left: 59px;
     gap: 59px;
     overflow-x: scroll;
