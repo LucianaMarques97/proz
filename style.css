@@ -486,13 +486,14 @@ display: block;
   }
 
 
-  .inserir-dados select{
-   margin-top: 10px;    margin-right: 750px;
+  .inserir-dados select {
+    margin-top: 10px;
+    margin-right: 750px; 
     height: 60px;
     width: 60px;
     font-size: 18px;
-    border: 1px solid #0000rgba(0, 0, 0, 0.5);
-  }
+    border: 1px solid rgba(0, 0, 0, 0.5); 
+}
 
   
 
