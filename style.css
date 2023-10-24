@@ -53,6 +53,7 @@ text-shadow: 4px 4px 15px rgba(128, 128, 128, 0.63);
 .menu img{
   border: none;
   box-shadow: none;
+  padding-left: 35px;
 }
 
 .img-mais-vendido{
