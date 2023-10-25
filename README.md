@@ -20,6 +20,6 @@
 * [GitHub](https://github.com/RafaelMoreiraDev)
 * David
 * [Github](https://github.com/davidfjr)
-* joão Ricardo Pinto Lucas
-* [GitHub](https://github.com/jricardo81)
+* Matheus Magalhães
+* [GitHub](https://github.com/mmagdev)
 
