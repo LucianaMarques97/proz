@@ -14,7 +14,7 @@
 * Matheus Maglhães
 
 ## Contato
-* Luciana
+* Luciana Marques
 * [GitHub](https://github.com/LucianaMarques97)
 * Rafael Antonio
 * [GitHub](https://github.com/RafaelMoreiraDev)
