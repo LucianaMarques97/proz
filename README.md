@@ -11,7 +11,7 @@
 * Luciana Marques
 * Rafael Antonio
 * David
-* João Ricardo
+* Matheus Maglhães
 
 ## Contato
 * Luciana
