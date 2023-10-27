@@ -35,9 +35,6 @@ li{
 list-style: none;
 }
 
-.desc-produto p, span{
-text-shadow: 4px 4px 15px rgba(128, 128, 128, 0.63);
-}
 
 .menu {
   display: flex;
@@ -122,6 +119,7 @@ display: block;
      
 }
 .botao-comprar{
+  max-width: 100px;
   background: #00000035;
   color: #000;
   padding: 8px 14px;
@@ -129,6 +127,7 @@ display: block;
   border-radius: 4px;
   font-size: 25px;
   transition:.5s;
+  margin-top: 10px;
   
 }
 .botao-comprar:hover{
@@ -368,7 +367,28 @@ display: block;
     align-items: center;
     padding-left: 20px; 
   }
+
+  .desc-prod-home {
+    display: grid;
+    grid-template-columns: 180px 1fr; /* Define um tamanho máximo de 150px para a primeira coluna. */
+    justify-content: space-between;
+    background-color: #c4aeff50;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  }
   
+  
+  .desc-prod-home p{
+    font-weight: 700;
+  }
+
+  .desc-prod-home span{
+    font-weight: 500;
+  }
+
+
+
   .desc-produto-vendido {
     padding: 20px;
     background-color: #C3AEFF;
