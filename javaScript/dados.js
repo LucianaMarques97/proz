@@ -38,7 +38,7 @@ var ROUPAS = {
         }
         
     ],
-    "calças":[
+    "calcas":[
         {
             "id": "05",
             "nome": "Calça Jeans Verão",
