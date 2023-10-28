@@ -166,8 +166,6 @@ section ul li img{
   color: #554DBE;
   scale: calc(1.08);
   
-  
-  
 }
 
   .produto-mais-vendido{
@@ -229,6 +227,11 @@ section ul li img{
     justify-content: center;
     gap: 80px;
     padding:15px 0 30px 0;
+  }
+
+  .btn .botao-comprar {
+    padding: 12px 45px;
+    cursor: pointer;
   }
 
 
