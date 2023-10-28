@@ -183,8 +183,11 @@ section ul li img{
   }
   
   .produto-mais-vendido div a img{
+
     transition: 0.5s;
   }
+
+    
 
   .produto-mais-vendido div a img:hover{
   
@@ -202,11 +205,13 @@ section ul li img{
   
   .categoria ul {
     display: flex;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
     padding-left: 59px;
     gap: 59px;
     overflow-x: scroll;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     justify-content: flex-start;
     flex-direction: row;
     transition: .3s;
@@ -218,8 +223,14 @@ section ul li img{
     transition: .5s;
     transform: scale(1.02);
   }
- 
- 
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding:15px 0 30px 0;
+  }
+
 
 .lista-produto img {
     flex: 0 0 auto;
