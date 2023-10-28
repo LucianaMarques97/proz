@@ -458,8 +458,8 @@ section ul li img{
     display: flex;
     flex-direction: column;
     background-color: #C3AEFF;
-    padding: 110PX;
-    gap: 80px;
+    padding: 50PX;
+    gap: 50px;
   }
   .titulo-pagamento h1 {
     display: flex;
@@ -481,7 +481,7 @@ section ul li img{
     display: flex;
     background-color: #C3AEFF;
     justify-content: center;
-    padding-top: 600px;
+    padding-top: 200px;
   } 
 
   .pagamento-formas a img {
