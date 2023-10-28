@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="./img/logo.svg">
+  <script src="./javaScript/script.js" defer></script>
   <title>Lu Modas</title>
 </head>
 <body>
@@ -55,9 +56,10 @@
       </div>
 
     </section>
-
+  <div class="bg-1">
     <h2 class="produto-blusa">Blusas</h2>
-    <section class="categoria-blusa">
+    <section class="categoria-blusa categoria">
+      <button id="anterior" class="anterior"><</button>
       <ul >
         <li><a href="./html/categoria.html"><img src="./img/blusa1.jpg" alt="blusa"></a></li>
         <li><a href="./html/categoria.html"><img src="./img/blusa2.jpg" alt="blusa"></a></li>
@@ -66,10 +68,14 @@
         <li><a href="./html/categoria.html"><img src="./img/blusa2.jpg" alt="blusa"></a></li>
         <li><a href="./html/categoria.html"><img src="./img/blusa1.jpg" alt="blusa"></a></li>
       </ul>
+      <button id="proximo" class="proximo">></button>
     </section>
+  </div>
 
+
+  <div class="bg-2">
     <h2 class="produto-calca">Calças</h2>
-    <section class="categoria-calca">
+    <section class="categoria-calca categoria">
       <ul>
         <li><a href="./html/categoria.html"><img src="./img/calca1.jpg" alt="calça"></a></li>
         <li><a href="./html/categoria.html"><img src="./img/calca2.jpg" alt="calça"></a></li>
@@ -83,9 +89,11 @@
 
       </ul>
     </section>
+  </div>
 
+  <div class="bg-1">
     <h2 class="produto-sapato">Sapatos</h2>
-    <section class="categoria-sapato">
+    <section class="categoria-sapato categoria">
       <ul>
         <li><a href=""><img src="./img/tenis.jpg" alt="sapato"></a></li>
         <li><a href=""><img src="./img/sapato1.jpg" alt="sapato"></a></li>
@@ -99,6 +107,8 @@
         
       </ul>
     </section>
+
+  </div>
   </main>
 
   <!-- Rodapé -->

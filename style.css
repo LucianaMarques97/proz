@@ -108,6 +108,37 @@ display: block;
 
 }
 
+
+/*Testes*/
+
+
+.bg-1{
+  background: #C3AEFF;
+}
+
+.bg-2{
+  background: #DDC8FF;
+}
+
+.bg-1 h2, .bg-2 h2{
+  display: block;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 0px 45px 0px;
+}
+
+section ul li{
+    width: 240px;
+    height: 280px;
+}
+
+section ul li img{
+  overflow: hidden;
+}
+
+/*Testes*/
+
+
 .mais-vendidos-titulo{
   background-image: url(./img/onda.svg)!important;
   padding-top: 80px;
@@ -160,22 +191,16 @@ display: block;
     transform: scale(1.02);
   }
   
-  .produto-blusa {
-    display: block;
-    font-size: 40px;
-    text-align: center;
-    background: #C3AEFF;
-    padding: 15px 0px 45px 0px;
-  }
+  
 
-  .categoria-blusa {
+  .categoria {
     display: flex;
     align-items: center;
-    background: #C3AEFF;
+    /* background: #C3AEFF; */
     
   }
   
-  .categoria-blusa ul{
+  .categoria ul {
     display: flex;
     padding-bottom: 80px;
     padding-left: 59px;
@@ -185,23 +210,16 @@ display: block;
     justify-content: flex-start;
     flex-direction: row;
     transition: .3s;
-    
-  }
+}
 
-  .categoria-blusa ul li:hover{
+
+
+  .categoria ul li:hover{
     transition: .5s;
     transform: scale(1.02);
   }
  
-  .categoria-calca ul li:hover{
-    transition: .5s;
-    transform: scale(1.02);
-  }
  
-  .categoria-sapato ul li:hover{
-    transition: .5s;
-    transform: scale(1.02);
-  }
 
 .lista-produto img {
     flex: 0 0 auto;
@@ -211,18 +229,10 @@ display: block;
 
   li img{
     width: 240px;
-  height: 250px;
-  }
-
-
+    height: 250px;
   
-  .produto-calca {
-    display: block;
-    font-size: 42px;
-    text-align: center;
-    background: #DDC8FF;
-    padding: 15px 0px 45px 0px;
   }
+
 
 
   footer p{
@@ -232,24 +242,7 @@ display: block;
     justify-items: center;
   }
 
-  .categoria-calca {
-    display: flex;
-    align-items: center;
-    background: #DDC8FF;
-    
-  }
-  
-  .categoria-calca ul{
-    display: flex;
-    padding-bottom: 80px;
-    padding-left: 59px;
-    gap: 59px;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    justify-content: flex-start;
-    flex-direction: row;
-    
-  }
+ 
 
   .produto-sapato {
     display: block;
@@ -260,24 +253,9 @@ display: block;
   }
 
 
-  .categoria-sapato {
-    display: flex;
-    align-items: center;
-    background: #C3AEFF;
-    
-  }
+ 
   
-  .categoria-sapato ul{
-    display: flex;
-    padding-bottom: 80px;
-    padding-left: 59px;
-    gap: 59px;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    justify-content: flex-start;
-    flex-direction: row;
-    
-  }
+  
 
   
   footer{
