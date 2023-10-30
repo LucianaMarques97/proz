@@ -1,3 +1,22 @@
+obterItensCatalogo: (categoria = 'calca') => {
+  const filtro = MENU[categoria];
+  console.log(filtro);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Acesso à div onde queremos inserir as informações
@@ -14,6 +33,7 @@ function preencherCatalogoBlusas() {
         const novaLi = document.createElement('li');
         const link = document.createElement('a');
         const imagem = document.createElement('img');
+      
 
         // Definir os atributos dos elementos
         link.href = './html/categoria.html'; // Link pode ser alterado para o link correto

@@ -339,6 +339,8 @@ section ul li img{
   
   /* Estilização da página minhas_compras e carrinho*/
 
+
+
   .minhas_compras{
     display: flex;
     flex-direction: column;
@@ -356,11 +358,23 @@ section ul li img{
     font-size: 46px;
   }
   .produto-vendido {
-    margin-left: 120px;
+    margin-left: 240px;
     display: flex;
     gap: 40px;
     align-items: center;
     padding-left: 20px; 
+  }
+
+  .produto-vendido .img-produto-vendido{
+    width: 260px;
+    height: 290px;
+  }
+
+  .produto-vendido .img-produto-vendido img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
   }
 
   .desc-prod-home {
@@ -376,6 +390,7 @@ section ul li img{
   
   .desc-prod-home p{
     font-weight: 700;
+    border: #554DBE;
   }
 
   .desc-prod-home span{
@@ -385,6 +400,9 @@ section ul li img{
 
 
   .desc-produto-vendido {
+    display: grid;
+    align-items: end;
+    grid-template-columns: 150px 1fr;
     padding: 20px;
     background-color: #C3AEFF;
     flex-grow: 1;
@@ -392,7 +410,18 @@ section ul li img{
   }
   
   .desc-produto-vendido p {
-    font-size: 36px;
+    font-size: 34px;
+    border-left: 1px solid #0000003d;
+    border-bottom: 1px solid #0000003d;
+    
+  }
+
+  .desc-produto-vendido span{
+    padding-left:10px;
+    color: #000;
+    border-left:1px solid #0000003d;
+    border-right:1px solid #0000003d;
+    border-bottom:1px solid  #0000003d;
   }
   
   .desc-produto-vendido{
