@@ -1,4 +1,95 @@
 
+
+// Acesso à div onde queremos inserir as informações
+const divBlusa = document.querySelector('.blusas');
+const divCalca = document.querySelector('.calcas');
+const divSapato = document.querySelector('.sapatos');
+
+
+// Função para preencher dinamicamente o catálogo de blusas
+function preencherCatalogoBlusas() {
+    // Iterar sobre as blusas
+    ROUPAS.blusas.forEach((blusa) => {
+        // Criar elementos HTML dinamicamente
+        const novaLi = document.createElement('li');
+        const link = document.createElement('a');
+        const imagem = document.createElement('img');
+
+        // Definir os atributos dos elementos
+        link.href = './html/categoria.html'; // Link pode ser alterado para o link correto
+        imagem.src = blusa.img;
+        imagem.alt = 'blusa';
+
+        // Adicionar a imagem ao link e o link à nova li
+        link.appendChild(imagem);
+        novaLi.appendChild(link);
+
+        // Adicionar a nova li à lista existente no HTML
+        const ulBlusa = divBlusa.querySelector('#blusaHome');
+        ulBlusa.appendChild(novaLi);
+    });
+}
+// Chamar a função para preencher dinamicamente o catálogo de blusas
+
+
+
+
+function preencherCatalogoCalca() {
+  // Iterar sobre as blusas
+  ROUPAS.calcas.forEach((calca) => {
+      // Criar elementos HTML dinamicamente
+      const novaLi = document.createElement('li');
+      const link = document.createElement('a');
+      const imagem = document.createElement('img');
+      
+      // Definir os atributos dos elementos
+      link.href = './html/categoria.html'; // Link pode ser alterado para o link correto
+      imagem.src = calca.img;
+      imagem.alt = 'calca';
+      
+      // Adicionar a imagem ao link e o link à nova li
+      link.appendChild(imagem);
+      novaLi.appendChild(link);
+      
+      // Adicionar a nova li à lista existente no HTML
+      const ulCalca = divCalca.querySelector('#calcaHome');
+      ulCalca.appendChild(novaLi);
+    });
+  }
+
+  
+  function preencherCatalogoSapato() {
+    // Iterar sobre as blusas
+  ROUPAS.sapatos.forEach((sapato) => {
+    // Criar elementos HTML dinamicamente
+    const novaLi = document.createElement('li');
+    const link = document.createElement('a');
+    const imagem = document.createElement('img');
+    
+    // Definir os atributos dos elementos
+    link.href = './html/categoria.html'; // Link pode ser alterado para o link correto
+      imagem.src = sapato.img;
+      imagem.alt = 'sapato';
+      
+      // Adicionar a imagem ao link e o link à nova li
+      link.appendChild(imagem);
+      novaLi.appendChild(link);
+
+      // Adicionar a nova li à lista existente no HTML
+      const ulSapato = divSapato.querySelector('#sapatoHome');
+      ulSapato.appendChild(novaLi);
+    });
+  }
+  
+
+  preencherCatalogoBlusas();
+  preencherCatalogoCalca();
+  preencherCatalogoSapato();
+  
+
+
+
+
 /*animação dos slider*/
 const categoriaUl = document.querySelectorAll(".categoria ul");
 const anteriorButton = document.querySelectorAll(".anterior");
@@ -17,33 +108,3 @@ proximoButton.forEach((button, index) => {
 });
 
 
-
-
-
-
-/* Templetes */
-
-
-loja.templates = {
-  sliderHome:
-            `<div class="bg-1">
-            <h2 class="produto-blusa">\${categoria}</h2>
-            <section class="categoria-blusa categoria">
-              
-              <ul >
-                <li><a href="./html/categoria.html"><img src="./img/blusa1.jpg" alt="blusa"></a></li>
-                <li><a href="./html/categoria.html"><img src="./img/blusa2.jpg" alt="blusa"></a></li>
-                <li><a href="./html/categoria.html"><img src="./img/blusa3.jpg" alt="blusa"></a></li>
-                <li><a href="./html/categoria.html"><img src="./img/blusa4.jpg" alt="blusa"></a></li>
-                <li><a href="./html/categoria.html"><img src="./img/blusa2.jpg" alt="blusa"></a></li>
-                <li><a href="./html/categoria.html"><img src="./img/blusa1.jpg" alt="blusa"></a></li>
-              </ul>
-              
-            </section>
-            <div class="btn">
-              <a  class="anterior botao-comprar"> <</a>
-              <a class="proximo botao-comprar">></a>
-            </div>
-          </div>`
-
-}
