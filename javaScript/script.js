@@ -8,17 +8,6 @@ obterItensCatalogo: (categoria = 'calca') => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // Acesso à div onde queremos inserir as informações
 const divBlusa = document.querySelector('.blusas');
 const divCalca = document.querySelector('.calcas');
@@ -50,8 +39,6 @@ function preencherCatalogoBlusas() {
     });
 }
 // Chamar a função para preencher dinamicamente o catálogo de blusas
-
-
 
 
 function preencherCatalogoCalca() {
