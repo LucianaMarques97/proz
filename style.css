@@ -1,3 +1,15 @@
+:root {
+  
+  --cor-primaria: #554DBE; 
+  --cor-bg-1: #C3AEFF; 
+  --cor-bg-2: #DDC8FF;
+  --cor-tbn-hover: #000; 
+}
+
+
+
+
+
 
 body{
   margin: 0 auto;
@@ -15,7 +27,7 @@ justify-content: center;
 h1, h2, p, a{
   padding: 0px;
   margin: 0px;
-  color: #000;
+  color: var(--cor-tbn-hover);
 }
 
 a{
@@ -60,7 +72,7 @@ list-style: none;
 
 .menu {
   display: flex;
-  background: #554DBE;
+  background: var(--cor-primaria);
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -83,8 +95,8 @@ gap: 0px;
 }
 
 .dp-menu ul li a{
-background: #554DBE;
-color: #000;
+background: var(--cor-primaria);
+color: var(--cor-tbn-hover);
 padding: 8px 14px;
 display: inline-block;
 border-radius: 1px;
@@ -93,8 +105,8 @@ font-size: 28px;
 }
 
 .dp-menu ul li a:hover{
-background: #000;
-color: #554DBE;
+background:  var(--cor-tbn-hover);
+color: var(--cor-bg-1);
 transition: background 0.6s;
 scale: calc(1.02);
 
@@ -131,11 +143,11 @@ display: block;
 
 
 .bg-1{
-  background: #C3AEFF;
+  background: var(--cor-bg-1);
 }
 
 .bg-2{
-  background: #DDC8FF;
+  background: var(--cor-bg-2);
 }
 
 .bg-1 h2, .bg-2 h2{
@@ -162,7 +174,7 @@ section ul li img{
   padding-top: 80px;
   display: flex;
   justify-content: center;
-  background: #DDC8FF;
+  background: var(--cor-bg-2);
   padding-bottom: 40px;
   font-size: 40px;
      
@@ -170,7 +182,7 @@ section ul li img{
 .botao-comprar{
   max-width: 100px;
   background: #00000035;
-  color: #000;
+  color:  var(--cor-tbn-hover);
   padding: 8px 14px;
   display: inline-block;
   border-radius: 4px;
@@ -180,8 +192,8 @@ section ul li img{
   
 }
 .botao-comprar:hover{
-  background: #000;
-  color: #554DBE;
+  background:  var(--cor-tbn-hover);
+  color: var(--cor-bg-1);
   scale: calc(1.08);
   
 }
@@ -194,7 +206,7 @@ section ul li img{
     padding: 20px 0px 69px 79px;
     font-size: 30px;
     flex-wrap: wrap;
-    background: #DDC8FF;
+    background:  var(--cor-bg-2);
     transition: 0.5s;
   }
   
@@ -214,9 +226,7 @@ section ul li img{
 
   .categoria {
     display: flex;
-    align-items: center;
-    /* background: #C3AEFF; */
-    
+    align-items: center; 
   }
   
   .categoria ul {
@@ -276,7 +286,7 @@ section ul li img{
 
    
   footer{
-    background: #554DBE;
+    background: var(--cor-primaria);
     
   }
   footer h2 {
@@ -314,7 +324,7 @@ section ul li img{
 
   .menu-footer{
     display: flex;
-    background: #554DBE;
+    background: var(--cor-primaria);
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -346,14 +356,14 @@ section ul li img{
     flex-direction: column;
     gap: 80px;
     padding-bottom: 140px;
-    background-color: #DDC8FF;
+    background-color: var(--cor-bg-2);
   }
   
   .minhas_compras h2{
     padding-top: 80px;
    display: flex;
     justify-content: center;
-    background: #DDC8FF;
+    background: var(--cor-bg-2);
     padding-bottom: 80px;
     font-size: 46px;
   }
@@ -390,7 +400,7 @@ section ul li img{
   
   .desc-prod-home p{
     font-weight: 700;
-    border: #554DBE;
+    border: var(--cor-bg-1);
   }
 
   .desc-prod-home span{
@@ -404,7 +414,7 @@ section ul li img{
     align-items: end;
     grid-template-columns: 150px 1fr;
     padding: 20px;
-    background-color: #C3AEFF;
+    background-color: var(--cor-bg-1);
     flex-grow: 1;
     padding-right: 20px;
   }
@@ -418,7 +428,7 @@ section ul li img{
 
   .desc-produto-vendido span{
     padding-left:10px;
-    color: #000;
+    color:  var(--cor-tbn-hover);
     border-left:1px solid #0000003d;
     border-right:1px solid #0000003d;
     border-bottom:1px solid  #0000003d;
@@ -427,7 +437,7 @@ section ul li img{
   .desc-produto-vendido{
     padding-left: 60px;
     width: 40px auto;
-    background-color: #C3AEFF;
+    background-color: var(--cor-bg-1);
 
   }
 
@@ -459,8 +469,8 @@ section ul li img{
     display: flex;
     width: 145px;
     margin: 24px 0px;
-    background: #554DBE;
-    color: #000;
+    background: var(--cor-primaria);
+    color:  var(--cor-tbn-hover);
     padding: 14px 10px;
     display: inline-block;
     border-radius: 1px;
@@ -469,8 +479,8 @@ section ul li img{
     }
     
     .btn-pagamento:hover{
-    background: #000;
-    color: #554DBE;
+    background:  var(--cor-tbn-hover);
+    color: var(--cor-bg-1);
     transition: background 0.6s;
     scale: calc(1.02);
     
@@ -489,7 +499,7 @@ section ul li img{
   .titulo-pagamento {
     display: flex;
     flex-direction: column;
-    background-color: #C3AEFF;
+    background-color: var(--cor-bg-1);
     padding: 50PX;
     gap: 50px;
   }
@@ -503,7 +513,7 @@ section ul li img{
   .pagamento-formas {
     display: flex;
     justify-content: center;
-    background-color: #C3AEFF;
+    background-color: var(--cor-bg-1);
     height: 100px;
     padding-top: 20px;
     gap: 10px;
@@ -511,7 +521,7 @@ section ul li img{
 
   .forma-pagamento {
     display: flex;
-    background-color: #C3AEFF;
+    background-color: var(--cor-bg-1);
     justify-content: center;
     padding-top: 200px;
   } 
@@ -526,7 +536,7 @@ section ul li img{
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    background-color: #C3AEFF;
+    background-color: var(--cor-bg-1);
     
   }
 
