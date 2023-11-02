@@ -445,6 +445,23 @@ section ul li img{
 
   /* Estilização da pagina Categorias*/
 
+.pgCategoria{
+  display: grid;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.pg-sapatos{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+
+
+
+  
 
 
 

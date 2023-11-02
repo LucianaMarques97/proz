@@ -14,10 +14,10 @@ const divCalca = document.querySelector('.calcas');
 const divSapato = document.querySelector('.sapatos');
 
 
-// Função para preencher dinamicamente o catálogo de blusas
+// Função para preencher dinamicamente o catálogo de blusas da pg home
 function preencherCatalogoBlusas() {
     // Iterar sobre as blusas
-    ROUPAS.blusas.forEach((blusa) => {
+    ROUPAS.blusas.slice(0,8).forEach((blusa) => {
         // Criar elementos HTML dinamicamente
         const novaLi = document.createElement('li');
         const link = document.createElement('a');
@@ -25,7 +25,7 @@ function preencherCatalogoBlusas() {
       
 
         // Definir os atributos dos elementos
-        link.href = './html/categoria.html'; // Link pode ser alterado para o link correto
+        link.href = './html/categoria.html'; 
         imagem.src = blusa.img;
         imagem.alt = 'blusa';
 
@@ -42,15 +42,15 @@ function preencherCatalogoBlusas() {
 
 
 function preencherCatalogoCalca() {
-  // Iterar sobre as blusas
-  ROUPAS.calcas.forEach((calca) => {
+  // Iterar sobre as calça
+  ROUPAS.calcas.slice(0.8).forEach((calca) => {
       // Criar elementos HTML dinamicamente
       const novaLi = document.createElement('li');
       const link = document.createElement('a');
       const imagem = document.createElement('img');
       
       // Definir os atributos dos elementos
-      link.href = './html/categoria.html'; // Link pode ser alterado para o link correto
+      link.href = './html/categoria.html'; 
       imagem.src = calca.img;
       imagem.alt = 'calca';
       
@@ -66,15 +66,15 @@ function preencherCatalogoCalca() {
 
   
   function preencherCatalogoSapato() {
-    // Iterar sobre as blusas
-  ROUPAS.sapatos.forEach((sapato) => {
+    // Iterar sobre os sapatos
+  ROUPAS.sapatos.slice(0,8).forEach((sapato) => {
     // Criar elementos HTML dinamicamente
     const novaLi = document.createElement('li');
     const link = document.createElement('a');
     const imagem = document.createElement('img');
     
     // Definir os atributos dos elementos
-    link.href = './html/categoria.html'; // Link pode ser alterado para o link correto
+    link.href = `./html/${sapato.categoria}.html`; 
       imagem.src = sapato.img;
       imagem.alt = 'sapato';
       
@@ -95,23 +95,23 @@ function preencherCatalogoCalca() {
   
 
 
-
-
-/*animação dos slider*/
+/*animação dos slider pagina home*/
 const categoriaUl = document.querySelectorAll(".categoria ul");
 const anteriorButton = document.querySelectorAll(".anterior");
 const proximoButton = document.querySelectorAll(".proximo");
 
 anteriorButton.forEach((button, index) => {
   button.addEventListener("click", () => {
-    categoriaUl[index].scrollLeft -= 350;
+    categoriaUl[index].scrollLeft -= 353;
   });
 });
 
 proximoButton.forEach((button, index) => {
   button.addEventListener("click", () => {
-    categoriaUl[index].scrollLeft += 350;
+    categoriaUl[index].scrollLeft += 353;
   });
-});
+})
+
+
 
 
