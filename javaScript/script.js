@@ -1,24 +1,11 @@
-// 
-const pgCategoria = document.querySelector('.pgCategoria')
-function preencherCatalogoPghome() {
-  ROUPAS.sapatos.forEach((sapatos)=> {
-    const novaLi = document.createElement('li');
-    const link = document.createElement ('a');
-    const imagem = document.createElement('img');
-    
-    link.href = '#';
-    imagem.src = `.${sapatos.img}`;
-    imagem.alt = 'sapato';
+obterItensCatalogo: (categoria = 'calca') => {
+  const filtro = MENU[categoria];
+  console.log(filtro);
 
-    link.appendChild(imagem);
-    novaLi.appendChild(link);
 
-    const ulSapatos = pgCategoria.querySelector('#sapatoPghome');
-    ulSapatos.appendChild(novaLi);
-
-  })
 }
-//
+
+
 
 
 // Acesso à div onde queremos inserir as informações
@@ -28,84 +15,87 @@ const divSapato = document.querySelector('.sapatos');
 
 
 // Função para preencher dinamicamente o catálogo de blusas da pg home
-function preencherCatalogoBlusas() {
-    // Iterar sobre as blusas
-    ROUPAS.blusas.slice(0,8).forEach((blusa) => {
-        // Criar elementos HTML dinamicamente
-        const novaLi = document.createElement('li');
-        const link = document.createElement('a');
-        const imagem = document.createElement('img');
-      
-
-        // Definir os atributos dos elementos
-        link.href = './html/categoria.html'; 
-        imagem.src = blusa.img;
-        imagem.alt = 'blusa';
-
-        // Adicionar a imagem ao link e o link à nova li
-        link.appendChild(imagem);
-        novaLi.appendChild(link);
-
-        // Adicionar a nova li à lista existente no HTML
-        const ulBlusa = divBlusa.querySelector('#blusaHome');
-        ulBlusa.appendChild(novaLi);
-    });
-}
-// Chamar a função para preencher dinamicamente o catálogo de blusas
-
-
-function preencherCatalogoCalca() {
-  // Iterar sobre as calça
-  ROUPAS.calcas.slice(0.8).forEach((calca) => {
-      // Criar elementos HTML dinamicamente
-      const novaLi = document.createElement('li');
-      const link = document.createElement('a');
-      const imagem = document.createElement('img');
-      
-      // Definir os atributos dos elementos
-      link.href = './html/categoria.html'; 
-      imagem.src = calca.img;
-      imagem.alt = 'calca';
-      
-      // Adicionar a imagem ao link e o link à nova li
-      link.appendChild(imagem);
-      novaLi.appendChild(link);
-      
-      // Adicionar a nova li à lista existente no HTML
-      const ulCalca = divCalca.querySelector('#calcaHome');
-      ulCalca.appendChild(novaLi);
-    });
-  }
-
-  
-  function preencherCatalogoSapato() {
-    // Iterar sobre os sapatos
-  ROUPAS.sapatos.slice(0,8).forEach((sapato) => {
-    // Criar elementos HTML dinamicamente
+function preencherCatalogoBlusas(categoria, tipo, div) {
+  // Iterar sobre as blusas
+  categoria.slice(0, 8).forEach((elemento) => {
+    // Criar elementos HTML dinamicamente    
     const novaLi = document.createElement('li');
     const link = document.createElement('a');
     const imagem = document.createElement('img');
-    
+
+
     // Definir os atributos dos elementos
-    link.href = `./html/${sapato.categoria}.html`; 
-      imagem.src = sapato.img;
-      imagem.alt = 'sapato';
-      
-      // Adicionar a imagem ao link e o link à nova li
-      link.appendChild(imagem);
-      novaLi.appendChild(link);
+    link.href = './html/categoria.html';
+    imagem.src = elemento.img;
+    imagem.alt = `${tipo}`;
+    console.log(imagem.alt)
 
-      // Adicionar a nova li à lista existente no HTML
-      const ulSapato = divSapato.querySelector('#sapatoHome');
-      ulSapato.appendChild(novaLi);
-    });
-  }
-  
+    // Adicionar a imagem ao link e o link à nova li
+    link.appendChild(imagem);
+    novaLi.appendChild(link);
 
-  // preencherCatalogoBlusas();
-  // preencherCatalogoCalca();
-  // preencherCatalogoSapato();
-  preencherCatalogoPghome();
+    // Adicionar a nova li à lista existente no HTML
+    const ul = div.querySelector(`#${tipo}Home`);
+    ul.appendChild(novaLi);
+  });
+}
+// Chamar a função para preencher dinamicamente o catálogo de blusas
+preencherCatalogoBlusas(ROUPAS.blusas, "blusa", divBlusa)
+preencherCatalogoBlusas(ROUPAS.calcas, "calca", divCalca)
+preencherCatalogoBlusas(ROUPAS.sapatos, "sapato", divSapato)
+
+// function preencherCatalogoCalca() {
+//   // Iterar sobre as calça
+//   ROUPAS.calcas.slice(0.8).forEach((calca) => {
+//     // Criar elementos HTML dinamicamente
+//     const novaLi = document.createElement('li');
+//     const link = document.createElement('a');
+//     const imagem = document.createElement('img');
+
+//     // Definir os atributos dos elementos
+//     link.href = './html/categoria.html';
+//     imagem.src = calca.img;
+//     imagem.alt = 'calca';
+
+//     // Adicionar a imagem ao link e o link à nova li
+//     link.appendChild(imagem);
+//     novaLi.appendChild(link);
+
+//     // Adicionar a nova li à lista existente no HTML
+//     const ulCalca = divCalca.querySelector('#calcaHome');
+//     ulCalca.appendChild(novaLi);
+//   });
+// }
+
+
+// function preencherCatalogoSapato() {
+//   // Iterar sobre os sapatos
+//   ROUPAS.sapatos.slice(0, 8).forEach((sapato) => {
+//     // Criar elementos HTML dinamicamente
+//     const novaLi = document.createElement('li');
+//     const link = document.createElement('a');
+//     const imagem = document.createElement('img');
+
+//     // Definir os atributos dos elementos
+//     link.href = `./html/${sapato.categoria}.html`;
+//     imagem.src = sapato.img;
+//     imagem.alt = 'sapato';
+
+//     // Adicionar a imagem ao link e o link à nova li
+//     link.appendChild(imagem);
+//     novaLi.appendChild(link);
+
+//     // Adicionar a nova li à lista existente no HTML
+//     const ulSapato = divSapato.querySelector('#sapatoHome');
+//     ulSapato.appendChild(novaLi);
+//   });
+// }
+
+
+// ;
+// preencherCatalogoCalca();
+// preencherCatalogoSapato();
+
 
 
 /*animação dos slider pagina home*/
