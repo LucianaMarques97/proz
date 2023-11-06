@@ -14,12 +14,26 @@ function preencherCatalogoBlusas(categoria, tipo, div) {
     const link = document.createElement('a');
     const imagem = document.createElement('img');
 
-
     // Definir os atributos dos elementos
     link.href = `./html/${elemento.categoria}.html`;
     imagem.src = elemento.img;
     imagem.alt = `${tipo}`;
-    console.log(imagem.alt)
+    imagem.dataset.id = elemento.id; // Armazenar o ID como um atributo de dados
+
+    // Adicionar um evento de clique para capturar o ID
+    link.addEventListener('click', (event) => {
+
+      event.preventDefault();
+      const idSelecionado = event.target.dataset.id; // Capturar o ID ao clicar na imagem
+      // Aqui você pode trabalhar com o ID selecionado, como adicionar ao carrinho
+      console.log('ID da roupa selecionada:', idSelecionado);
+      let idRoupa = idSelecionado;
+      localStorage.setItem('idRoupaSelecionada', idRoupa);
+      window.open(`./html/${elemento.categoria}.html`,"_self")
+
+
+      // Adicione a lógica para adicionar ao carrinho com o ID capturado
+    });
 
     // Adicionar a imagem ao link e o link à nova li
     link.appendChild(imagem);
@@ -30,7 +44,6 @@ function preencherCatalogoBlusas(categoria, tipo, div) {
     ul.appendChild(novaLi);
   });
 }
-
 
 //
 
