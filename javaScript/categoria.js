@@ -13,6 +13,7 @@ function preencherCatalogoPgcategoria() {
     link.addEventListener('click',(event)=>{
       event.preventDefault();
       const idSelecionado = event.target.dataset.id;
+      localStorage.setItem('idRoupaSelecionada', idRoupa);
 
       console.log(idSelecionado)
       window.scrollTo({ top: 80, behavior: 'smooth' });
@@ -58,7 +59,8 @@ encontrarValoresPorId(idRoupa, ROUPAS);
   let nome =produtoSelecionadoPorClick[0].nome;
   let tamanho = produtoSelecionadoPorClick[0].tamanho;
   let cor = produtoSelecionadoPorClick[0].cor;
-  let valor = produtoSelecionadoPorClick[0].valor;
+  let valor = produtoSelecionadoPorClick[0].valor.toFixed(2).replace('.', ',');
+
   let categoria = produtoSelecionadoPorClick[0].categoria;
 
   function preencherProdutoSelecionado (){
@@ -69,17 +71,17 @@ encontrarValoresPorId(idRoupa, ROUPAS);
 
   
   let  produtoSelecionado = 
-  `<div>
+  `<div class="produto-mais-vendido">
   <a href="../${categoria}.html">
    <img class="img-mais-vendido" src=".${img}"
    alt="${nome}">
    </a>
    </div>
-   <div id="descProduto">
- <p>Produto: <span>${nome}</span></p>
- <p>Tamanho: <span>${tamanho}</span></p>
- <p>Cor: <span>${cor}</span></p>
- <p>R$: <span>${valor}</span></p>
+   <div id="descProduto" class="desc-prod-home">
+ <p>Produto </p><span>${nome}</span>
+ <p>Tamanho </p><span>${tamanho}</span>
+ <p>Cor </p><span>${cor}</span>
+ <p>R$ </p><span>${valor}</span>
  <a class="botao-comprar" href="../carrinho.html">Comprar</a>
 </div>`
 

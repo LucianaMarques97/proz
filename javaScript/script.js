@@ -25,7 +25,7 @@ function preencherCatalogoBlusas(categoria, tipo, div) {
 
       event.preventDefault();
       const idSelecionado = event.target.dataset.id; // Capturar o ID ao clicar na imagem
-      // Aqui você pode trabalhar com o ID selecionado, como adicionar ao carrinho
+
       console.log('ID da roupa selecionada:', idSelecionado);
       let idRoupa = idSelecionado;
       localStorage.setItem('idRoupaSelecionada', idRoupa);
