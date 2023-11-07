@@ -19,8 +19,16 @@ function validarFormulario() {
     }
 
 
+    // OBS: Ainda tem que pegar os dados do usuário e salvar no local storage *****************************
+
+
     // Se todos os campos forem válidos, permita o envio do formulário
-    return true;
+    // return true;
+
+    // Redirecionando para abrir outra página, seja de entrega ou de agradecimento pela compra
+    redirect()
 }
 
-console.log("teste")
+function redirect() {
+    setTimeout(function () { window.location = "http://www.google.com/" });
+}
