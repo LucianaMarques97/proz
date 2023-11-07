@@ -376,6 +376,10 @@ section ul li img{
     padding-left: 20px; 
   }
 
+  .produto-vendido div p{
+    font-size: 28px;
+  }
+
   .produto-vendido .img-produto-vendido{
     width: 260px;
     height: 290px;
@@ -390,6 +394,7 @@ section ul li img{
 
   .desc-prod-home {
     display: grid;
+    min-width: 430px;
     grid-template-columns: 180px 1fr; /* Define um tamanho máximo de 150px para a primeira coluna. */
     justify-content: space-between;
     background-color: #c4aeff50;
