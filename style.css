@@ -17,6 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 1540px;
   margin: 0 auto;
+  background-color: var(--cor-bg-1);
 
 }
 
@@ -637,13 +638,32 @@ label {
 
 
 .container {
-  position: absolute;
+  /* position: absolute; */
   top: 270px;
   left: 350px;
   width: 800px;
   margin: 20px auto;
   border: 1px solid #000;
   padding: 20px;
+  background-color:white;
+}
+
+.pix{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.pix span{
+  cursor: copy;
+  padding: 12PX;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.pix h3{
+  font-size: 24px;
 }
 
 .detalhes-blt {
