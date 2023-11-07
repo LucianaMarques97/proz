@@ -1,128 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" type="image/x-icon" href="../img/logo.svg">
-  <script src="../javaScript/validarFormulario.js" defer></script>
   <title>Lu Modas</title>
 </head>
-
 <body>
-  <header>
-    <nav class="menu">
-      <a href="../home.html">
-        <div class="logo22">
-          <img src="../img/logo-test3.png" alt="imagem da loja">
+<header>
+  <nav class="menu">
+    <a href="../home.html">
+      <div class="logo22">
+      <img src="../img/logo-test3.png" alt="imagem da loja">
+    </div>
+    </a>
+    <div class="dp-menu">
+    <ul>
+      <li><a href="../home.html">Inicio</a></li>
+      <li><a href="./categoria.html">Categoria</a>
+        <ul>
+          <li><a href="./categoria.html">Blusa</a></li>
+          <li><a href="./categoria.html">Calça</a></li>
+          <li><a href="./categoria.html">Sapato</a></li>
+        </ul>
+      </li>
+      <li><a href="./carrinho.html" >Carrinho</a></li>
+      <li><a href="./pagamento.html" class="deco">Pagamento</a></li>
+      <li><a href="./minhas_compras.html">Minhas Compras</a></li>
+    </ul>
+  </div>
+
+</header>
+
         </div>
+    <!-- Corpo -->
+    
+    <div class="titulo-pagamento">
+      <h1>Forma de Pagamento</h1>
+      <h2>Informe os dados e confira as informações</h2>
+    </div>
+    <div class="form hiden">
+    <form class="inserir-dados">
+        <label for="nome">Nome do cartão: </label>
+        <input
+            type="text"
+            id="nome"
+            placeholder="Ex.: Mario Q Silva"
+            name="nome"
+        />
+        <label for="nome">Número do cartão: </label>
+        <input
+            type="text"
+            id="numero"
+            placeholder="Ex.: 2222 3333 4444 5555"
+            numero="numero"
+        />
+        <div class="data-codigo">
+          <label for="data">Data de vencimento: </label>
+        <input
+            type="text"
+            id="data"
+            placeholder="Ex.: 02/23"
+            data="data"
+        />
+        <label for="código">Código: </label>
+        <input
+            type="text"
+            id="código"
+            placeholder="Ex.: 345"
+            codigo="código"
+        />
+        </div>
+        
+        <label class="qtd-parcelas" for="parcelas">Qtd de Parcelas:</label>
+        <select id="parcelas" name="parcelas">
+            <option value="1">1x</option>
+            <option value="2">2x</option>
+            <option value="3">3x</option>
+            <option value="4">4x</option>
+            <option value="5">5x</option>
+            <option value="6">6x</option>
+            <option value="7">7x</option>
+            <option value="8">8x</option>
+            <option value="9">9x</option>
+            <option value="10">10x</option>
+            <option value="11">11x</option>
+            <option value="12">12x</option>
+        </select>
+        <a href="./minhas_compras.html" class="btn-pagamento">Confirmar</a>
+    </form>
+  </div>
+
+    <h2 class="forma-pagamento">Forma de Pagamento</h2>
+    <div class="pagamento-formas">
+      <a href="./pagamento.html">
+        <img src="../img/pixx.jpg"
+        alt="Pix">
       </a>
+      <a href="./pagamento.html">
+        <img src="../img/boletoo.jpg"
+        alt="Boleto">
+      </a>
+      <a href="./pagamento.html">
+        <img src="../img/cartão.jpg"
+        alt="Cartão">
+      </a>
+    </div>
+<footer>
+  <div class="menu-footer">
+      
+    <div class="footer-icons">
+      <h2>Contato</h2>
+      <a href="#">
+        <i class="fa-brands fa-instagram fa-2x"></i>
+      </a>    
+      <a href="#">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+      </a> 
+      <a href="#">
+        <i class="fa-brands fa-tiktok fa-2x"></i>
+      </a> 
+    </div>
+
+    <nav>
+
       <div class="dp-menu">
         <ul>
           <li><a href="../home.html">Inicio</a></li>
-          <li><a href="./categoria.html">Categoria</a>
-            <ul>
-              <li><a href="./categoria.html">Blusa</a></li>
-              <li><a href="./categoria.html">Calça</a></li>
-              <li><a href="./categoria.html">Sapato</a></li>
-            </ul>
-          </li>
           <li><a href="./carrinho.html">Carrinho</a></li>
-          <li><a href="./pagamento.html" class="deco">Pagamento</a></li>
+          <li><a href="./pagamento.html">Pagamento</a></li>
           <li><a href="./minhas_compras.html">Minhas Compras</a></li>
         </ul>
       </div>
 
-  </header>
-
-  </div>
-  <!-- Corpo -->
-  <div class="titulo-pagamento">
-    <h1>Forma de Pagamento</h1>
-    <h2>Informe os dados do seu cartão</h2>
+  </nav>
   </div>
 
-  <form class="inserir-dados" onsubmit="return validarFormulario()">
-    <label for="nome">Nome do cartão: </label>
-    <input type="text" id="nome" placeholder="Ex.: Mario Q Silva" name="nome" />
-    <span id="nomeErro" style="color: red;"></span><br>
-    <label for="numero">Número do cartão: </label>
-    <input type="text" id="numero" placeholder="Ex.: 2222 3333 4444 5555" numero="numero" />
-    <span id="numeroErro" style="color: red;"></span><br>
-    <div class="data-codigo">
-      <label for="data">Data de vencimento: </label>
-      <input type="text" id="data" placeholder="Ex.: 02/23" data="data" />
-      <label for="código">Código: </label>
-      <input type="text" id="código" placeholder="Ex.: 345" codigo="código" />
-    </div>
+  <p>Copyright &copy; Todos os Direitos Reservados</p>
+</footer>
 
-    <label class="qtd-parcelas" for="parcelas">Qtd de Parcelas:</label>
-    <select id="parcelas" name="parcelas">
-      <option value="1">1x</option>
-      <option value="2">2x</option>
-      <option value="3">3x</option>
-      <option value="4">4x</option>
-      <option value="5">5x</option>
-      <option value="6">6x</option>
-      <option value="7">7x</option>
-      <option value="8">8x</option>
-      <option value="9">9x</option>
-      <option value="10">10x</option>
-      <option value="11">11x</option>
-      <option value="12">12x</option>
-    </select>
-    <input type="submit" class="btn-pagamento" value="Enviar">
-    <!-- <a href="./minhas_compras.html" class="btn-pagamento">Confirmar</a> -->
-  </form>
-
-
-  <h2 class="forma-pagamento">Forma de Pagamento</h2>
-  <div class="pagamento-formas">
-    <a href="./pagamento.html">
-      <img src="../img/pixx.jpg" alt="Pix">
-    </a>
-    <a href="./pagamento.html">
-      <img src="../img/boletoo.jpg" alt="Boleto">
-    </a>
-    <a href="./pagamento.html">
-      <img src="../img/cartão.jpg" alt="Cartão">
-    </a>
+<div class="container">
+  <div class="header">
+      <h1>Boleto Bancário</h1>
   </div>
-  <footer>
-    <div class="menu-footer">
 
-      <div class="footer-icons">
-        <h2>Contato</h2>
-        <a href="#">
-          <i class="fa-brands fa-instagram fa-2x"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-facebook fa-2x"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-tiktok fa-2x"></i>
-        </a>
-      </div>
-
-      <nav>
-
-        <div class="dp-menu">
-          <ul>
-            <li><a href="../home.html">Inicio</a></li>
-            <li><a href="./carrinho.html">Carrinho</a></li>
-            <li><a href="./pagamento.html">Pagamento</a></li>
-            <li><a href="./minhas_compras.html">Minhas Compras</a></li>
-          </ul>
-        </div>
-
-      </nav>
-    </div>
-
-    <p>Copyright &copy; Todos os Direitos Reservados</p>
-  </footer>
+  <div class="detalhes-blt">
+      <table>
+          <tr>
+              <th>Loja</th>
+              <td>Luciana Modas</td>
+          </tr>
+    
+          <tr>
+              <th>Data de Vencimento:</th>
+              <td>05 dias após gerar o boleto</td>
+          </tr>
+          <tr>
+              <th>Valor:</th>
+              <td>R$ 100,00</td>
+          </tr>
+          <tr>
+              <th>Código de Barras</th>
+              <td>24343575757567566756 645646456 32420000</td>
+          </tr>
+          <p>Pagamento em toda rede bancária</p>
+      </table>
+  </div>
 </body>
-
 </html>
+
+
+<!-- */Boleto -->

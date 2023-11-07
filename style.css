@@ -209,13 +209,17 @@ section ul li img {
 .produto-mais-vendido {
   background-image: url(./img/onda.svg) !important;
   display: flex;
-  align-items: center;
   gap: 50px;
-  padding: 20px 0px 69px 79px;
+  padding-left: 185px;
+  padding-bottom: 45px;
+  /* padding: 20px 0px 69px 79px; */
   font-size: 30px;
   flex-wrap: wrap;
   background: var(--cor-bg-2);
   transition: 0.5s;
+  align-items: flex-start;
+  align-content: flex-start;
+  min-height: 120px;
 }
 
 .produto-mais-vendido div a img {
@@ -387,6 +391,10 @@ footer p {
   padding-left: 20px;
 }
 
+.produto-vendido div p{
+  font-size: 28px;
+}
+
 .produto-vendido .img-produto-vendido {
   width: 260px;
   height: 290px;
@@ -405,6 +413,8 @@ footer p {
   /* Define um tamanho máximo de 150px para a primeira coluna. */
   justify-content: space-between;
   background-color: #c4aeff50;
+  min-width: 440px;
+  min-height: 160px;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
@@ -414,10 +424,12 @@ footer p {
 .desc-prod-home p {
   font-weight: 700;
   border: var(--cor-bg-1);
+  line-height: 1.5;
 }
 
 .desc-prod-home span {
   font-weight: 500;
+  line-height: 1.5;
 }
 
 
@@ -530,6 +542,7 @@ span {
 /*Estilização da Pagina Pagamento*/
 
 .titulo-pagamento {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--cor-bg-1);
@@ -619,4 +632,39 @@ label {
 .data-codigo label {
   display: flex;
   justify-items: left;
+}
+
+
+
+.container {
+  position: absolute;
+  top: 270px;
+  left: 350px;
+  width: 800px;
+  margin: 20px auto;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.detalhes-blt {
+  margin-bottom: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+th {
+  text-align: left;
+}
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hiden{
+  display: none;
 }
