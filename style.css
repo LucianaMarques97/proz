@@ -635,9 +635,11 @@ label {
   justify-items: left;
 }
 
+.inserir-dados h2{
+  padding-bottom: 36px;
+}
 
-
-.container {
+.boleto {
   /* position: absolute; */
   top: 270px;
   left: 350px;

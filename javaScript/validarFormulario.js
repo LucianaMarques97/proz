@@ -32,3 +32,28 @@ function validarFormulario() {
 function redirect() {
     setTimeout(function () { window.location = "http://www.google.com/" });
 }
+
+
+
+
+// renderiza a forma de pagamento escolhido!
+function formaPagamentoEscolhida(formaPg) {
+    let boleto = document.getElementById('boleto');
+    let cartao = document.getElementById('cartao');
+    let pix = document.getElementById('pix');
+  
+    if (formaPg === 'pix') {
+      pix.classList.remove('hiden');
+      cartao.classList.add('hiden');
+      boleto.classList.add('hiden');
+    } else if (formaPg === 'boleto') {
+      pix.classList.add('hiden');
+      cartao.classList.add('hiden');
+      boleto.classList.remove('hiden');
+    } else {
+      pix.classList.add('hiden');
+      cartao.classList.remove('hiden');
+      boleto.classList.add('hiden');
+    }
+  }
+  

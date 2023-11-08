@@ -69,7 +69,6 @@ function encontrarValoresPorId(id, objeto) {
   });
 
 
-  // Procurar na categoria "calcas" se não for encontrado nas "blusas"
 
   // return valoresEncontrados;
   return valoresEncontrados
