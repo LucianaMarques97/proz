@@ -366,12 +366,17 @@ footer p {
 
 /* Estilização da página minhas_compras e carrinho*/
 
+.img-carrinho{
+  width: 161px;
+  height: 200px;
+}
+
 
 
 .minhas_compras {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 10px;
   padding-bottom: 140px;
   background-color: var(--cor-bg-2);
 }
@@ -546,7 +551,7 @@ footer p {
 
 .total-pagamento {
   display: flex;
-  margin-left: 140px;
+  margin-left: 190px;
   justify-content: center;
   flex-direction: column;
 }
