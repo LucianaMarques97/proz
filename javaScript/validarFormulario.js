@@ -1,4 +1,9 @@
-function validarFormulario() {
+const btn = document.querySelector('.btn-pagamento')
+
+btn.addEventListener("click", (e) => { validarFormulario(e) })
+
+function validarFormulario(e) {
+  e.preventDefault()
   // Obter os valores dos campos de entrada
   let nome = document.getElementById('nome').value;
   let numeroCartao = document.getElementById('numero').value;
@@ -18,18 +23,16 @@ function validarFormulario() {
     return false; // Impedir o envio do formulário
   }
 
-
   // OBS: Ainda tem que pegar os dados do usuário e salvar no local storage *****************************
 
-
-
-
   // Redirecionando para abrir outra página, seja de entrega ou de agradecimento pela compra
-  redirect()
+  // redirect()
+  renderizarFormEndereco()
 }
 
 function redirect() {
-  setTimeout(function () { renderizarFormEndereco() });
+  // setTimeout(renderizarFormEndereco(), 2000);
+  // setTimeout(function () { renderizarFormEndereco() });
 
 }
 
@@ -79,12 +82,11 @@ function validarEndereco() {
   let cidade = document.getElementById('txtCidade').value;
 
   // Limpar mensagens de erro anteriores
-  document.getElementById('nomeErro').innerHTML = '';
-  document.getElementById('numeroErro').innerHTML = '';
+  document.getElementById('campoErro').innerHTML = '';
 
   // Validar os campos (não pode estar em branco)
   if (endereco === '' || bairro === '' || numero === '' || cidade === '') {
-    document.getElementById('nomeErro').innerHTML = 'O campo não pode ficar em branco';
+    document.getElementById('campoErro').innerHTML = 'Os campos com * são obrigatórios';
     return false; // Impedir o envio do formulário
   }
 
@@ -93,5 +95,5 @@ function validarEndereco() {
 }
 
 function obrigado() {
-  setTimeout(function () { window.location = "./html/obrigado.html", "_self" });
+  setTimeout(function () { window.location = "./obrigado.html", "_self" });
 }
