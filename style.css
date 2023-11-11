@@ -89,9 +89,26 @@ li {
 }
 
 
-.img-mais-vendido {
-  width: 240px;
+.banner{
+  display: flex;
+  border: 100px;
+  padding: 120px;
+  bottom: 10px;
+  width: 1250px;
+  height: 200px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+  transform: translateX(0); 
+}
+
+.imagemAnimada{
+  position: absolute;
+  align-items: center;
+  bottom: 100px;
+  width: 1250px;
   height: 250px;
+  object-fit: cover;
+  
 }
 
 .dp-menu ul li {
@@ -366,17 +383,12 @@ footer p {
 
 /* Estilização da página minhas_compras e carrinho*/
 
-.img-carrinho{
-  width: 161px;
-  height: 200px;
-}
-
 
 
 .minhas_compras {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 80px;
   padding-bottom: 140px;
   background-color: var(--cor-bg-2);
 }
@@ -551,7 +563,7 @@ footer p {
 
 .total-pagamento {
   display: flex;
-  margin-left: 190px;
+  margin-left: 140px;
   justify-content: center;
   flex-direction: column;
 }
@@ -592,6 +604,21 @@ span {
   justify-content: center;
   /* margin-left: 600px; */
 }
+
+.img-carrinho{
+  width: 210px;
+  height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Estilização da Pagina Pagamento*/
 
@@ -742,4 +769,15 @@ th {
 
 .hiden{
   display: none;
+}
+
+
+
+.obrigado {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
 }
