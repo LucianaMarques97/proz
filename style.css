@@ -119,6 +119,7 @@ li {
 }
 
 .dp-menu ul ul {
+  z-index: 2;
   display: none;
   left: -40px;
   position: absolute;
@@ -467,6 +468,45 @@ footer p {
 
 }
 
+/* Endereço */
+.endereco{
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: start;
+}
+
+.endereco label{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+.endereco input{
+  width: 500px;
+  height: 30px;
+  margin-bottom: 25px;
+}
+.endereco_container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.endereco_container .uf, .endereco_container select{
+  align-items: flex-start;
+}
+
+
+.endereco_container select{
+  align-items: center;
+  margin-right: 750px;
+  height: 40px;
+  width: 55px;
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
 
 
 /* Estilização da pagina Categorias*/
@@ -485,6 +525,14 @@ footer p {
   max-width: 1200px;
 }
 
+
+.pg-produto {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 40px;
+  max-width: 1200px;
+}
 
 
 
