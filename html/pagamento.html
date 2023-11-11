@@ -121,7 +121,7 @@
   <div class="endereco hiden" id="endereco">
 
     <div class="endereco_container endereco">
-      <form onsubmit="return validarEndereco()">
+      <form onsubmit="return  validarEndereco()" class="inserir-dados cartao ">
         <span id="campoErro" style="color: red;"></span><br>
         <label>Endereço*:</label>
         <input type="number" id="txtEndereco" placeholder="Cep" class="form-control" />
@@ -173,7 +173,7 @@
           <option value="SE">SE</option>
           <option value="TO">TO</option>
         </select>
-        <input id="tnx" type="submit" value="OK">
+        <input class="btn-pagamento" id="tnx" type="submit" value="OK">
       </form>
     </div>
 

@@ -15,11 +15,14 @@ function validarFormulario(e) {
   // Validar o campo Nome (não pode estar em branco)
   if (nome === '') {
     document.getElementById('nomeErro').innerHTML = 'O nome é obrigatório.';
+    document.getElementById('nome').focus()
     return false; // Impedir o envio do formulário
   }
   // Validar o campo Numero do Cartão (não pode estar em branco)
   if (numeroCartao === '') {
     document.getElementById('numeroErro').innerHTML = 'Por favor, preencha um número válido';
+    document.getElementById('numero').focus()
+
     return false; // Impedir o envio do formulário
   }
 
