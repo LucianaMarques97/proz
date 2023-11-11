@@ -43,8 +43,8 @@
   <div class="titulo-pagamento">
     <h1>Forma de Pagamento</h1>
   </div>
-  
-  <form class="inserir-dados cartao " id="cartao" onsubmit="return validarFormulario()">
+  <!-- onsubmit="return validarFormulario()" -->
+  <form class="inserir-dados cartao " id="cartao">
     <h2>Informe os dados do seu cartão</h2>
     <label for="nome">Nome do cartão: </label>
     <input type="text" id="nome" placeholder="Ex.: Mario Q Silva" name="nome" />
@@ -74,110 +74,115 @@
       <option value="11">11x</option>
       <option value="12">12x</option>
     </select>
-    <input type="submit" class="btn-pagamento" value="Enviar">
+    <!-- <input type="submit" class="btn-pagamento" value="Enviar"> -->
+    <!-- <input type="submit" class="btn-pagamento" value="Enviar"> -->
+    <button class="btn-pagamento">Enviar</button>
     <!-- <a href="./minhas_compras.html" class="btn-pagamento">Confirmar</a> -->
   </form>
 
   <div class="boleto hiden" id="boleto">
     <div class="header">
-        <h1>Boleto Bancário</h1>
+      <h1>Boleto Bancário</h1>
     </div>
 
     <div class="detalhes-blt">
-        <table>
-            <tr>
-                <th>Loja</th>
-                <td>Luciana Modas</td>
-            </tr>
-      
-            <tr>
-                <th>Prazo Para Pagamento:</th>
-                <td>05 dias após gerar o boleto</td>
-            </tr>
-            <tr>
-                <th>Valor:</th>
-                <td>R$ 100,00</td>
-            </tr>
-            <tr>
-                <th>Código de Barras</th>
-                <td>24343575757567566756 645646456 32420000</td>
-            </tr>
-            <p>Pagamento em toda rede bancária</p>
-        </table>
+      <table>
+        <tr>
+          <th>Loja</th>
+          <td>Luciana Modas</td>
+        </tr>
+
+        <tr>
+          <th>Prazo Para Pagamento:</th>
+          <td>05 dias após gerar o boleto</td>
+        </tr>
+        <tr>
+          <th>Valor:</th>
+          <td>R$ 100,00</td>
+        </tr>
+        <tr>
+          <th>Código de Barras</th>
+          <td>24343575757567566756 645646456 32420000</td>
+        </tr>
+        <p>Pagamento em toda rede bancária</p>
+      </table>
     </div>
   </div>
 
-  <div class="pix hiden" id="pix" >
+  <div class="pix hiden" id="pix">
     <h3>Leia o QR-Code para pagar com PIX</h3>
-    <img  src="../img/img-pix.png">
+    <img src="../img/img-pix.png">
     <p>- Pix Copia e Cola -</p>
     <span class="ccopia-pix">24429952005200KKEK46L464B5SS5T5HJ87XZX8XQ6CCBBFHGN6N226EFS8Q53</span>
   </div>
-  
 
 
-  <div class="endereco">
-          
-            <div class="endereco_container endereco">
-                
-                <label>Endereço:</label>
-                <input type="number" id="txtEndereco" placeholder="Cep" class="form-control"/>
-            
-        
 
-        
-                <label>Bairro:</label>
-                <input type="text" id="txtBairro" placeholder="Meu bairro" class="form-control"/>
-          
-                <label>Número:</label>
-                <input type="text" id="txtNumero" placeholder="ex:134"  class="form-control"/>
-          
-                <label>Cidade:</label>
-                <input type="text" id="txtCidade" placeholder="ex: Santos" class="form-control"/>
-          
-                <label>Complemento:</label>
-                <input type="text" id="txtComplemento" placeholder="Ponto de referência" class="form-control"/>
-        
-        
-                <label class="uf">UF:</label>
-              <select id="ddlUF" class="form-control"> 
-                <option value="-1">...</option>
-                <option value="AC">AC</option>
-                <option value="AL">AL</option>
-                <option value="AP">AP</option>
-                <option value="AM">AM</option>
-                <option value="BA">BA</option>
-                <option value="CE">CE</option>
-                <option value="DF">DF</option>
-                <option value="ES">ES</option>
-                <option value="GO">GO</option>
-                <option value="MA">MA</option>
-                <option value="MT">MT</option>
-                <option value="MS">MS</option>
-                <option value="MG">MG</option>
-                <option value="PA">PA</option>
-                <option value="PB">PB</option>
-                <option value="PR">PR</option>
-                <option value="PE">PE</option>
-                <option value="PI">PI</option>
-                <option value="RJ">RJ</option>
-                <option value="RN">RN</option>
-                <option value="RS">RS</option>
-                <option value="RO">RO</option>
-                <option value="RR">RR</option>
-                <option value="SC">SC</option>
-                <option value="SP">SP</option>
-                <option value="SE">SE</option>
-                <option value="TO">TO</option>
-              </select>
-            </div>
-    
+  <div class="endereco hiden" id="endereco">
+
+    <div class="endereco_container endereco">
+      <form onsubmit="return validarEndereco()">
+        <span id="campoErro" style="color: red;"></span><br>
+        <label>Endereço*:</label>
+        <input type="number" id="txtEndereco" placeholder="Cep" class="form-control" />
+
+
+
+        <label>Bairro*:</label>
+        <input type="text" id="txtBairro" placeholder="Meu bairro" class="form-control" />
+
+        <label>Número*:</label>
+        <input type="text" id="txtNumero" placeholder="ex:134" class="form-control" />
+
+        <label>Cidade*:</label>
+        <input type="text" id="txtCidade" placeholder="ex: Santos" class="form-control" />
+
+        <label>Complemento:</label>
+        <input type="text" id="txtComplemento" placeholder="Ponto de referência" class="form-control" />
+
+
+
+        <label class="uf">UF:</label>
+        <select id="ddlUF" class="form-control">
+          <option value="-1">...</option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SP">SP</option>
+          <option value="SE">SE</option>
+          <option value="TO">TO</option>
+        </select>
+        <input id="tnx" type="submit" value="OK">
+      </form>
+    </div>
+
   </div>
 
 
   <h2 class="forma-pagamento">Forma de Pagamento</h2>
   <div class="pagamento-formas">
-    <a href="#" onclick="formaPagamentoEscolhida('pix')"> 
+    <a href="#" onclick="formaPagamentoEscolhida('pix')">
       <img src="../img/pixx.jpg" alt="Pix">
     </a>
     <a href="#" onclick="formaPagamentoEscolhida('boleto')">
@@ -222,13 +227,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
