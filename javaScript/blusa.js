@@ -99,7 +99,7 @@ function produtoSelecionado() {
  <p>Tamanho </p><span>${tamanho}</span>
  <p>Cor </p><span>${cor}</span>
  <p>R$ </p><span>${valor}</span>
- <a class="botao-comprar" href="../carrinho.html">Comprar</a>
+ <a class="botao-comprar" href="../html/carrinho.html">Comprar</a>
 </div>`
 
   return teste

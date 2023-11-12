@@ -242,7 +242,8 @@ section ul li img {
 }
 
 .produto-mais-vendido div a img {
-
+  width: 300px;
+  height: 340px;
   transition: 0.5s;
 }
 
