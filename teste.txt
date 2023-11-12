@@ -1,0 +1,1 @@
+só pra testar se estou conseguindo conectar meu vscode com o repositório pra eu não ter que ficar fazendo o download do zip toda vez 
