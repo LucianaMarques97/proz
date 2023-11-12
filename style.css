@@ -389,7 +389,7 @@ footer p {
 .minhas_compras {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 10px;
   padding-bottom: 140px;
   background-color: var(--cor-bg-2);
 }
@@ -564,7 +564,7 @@ footer p {
 
 .total-pagamento {
   display: flex;
-  margin-left: 140px;
+  margin-left: 180px;
   justify-content: center;
   flex-direction: column;
 }
