@@ -93,7 +93,7 @@ li {
   display: flex;
   border: 100px;
   padding: 120px;
-  margin: 10px 10px auto;
+  margin: 10px auto;
   bottom: 10px;
   width: 1200px;
   height: 200px;
@@ -110,7 +110,7 @@ li {
   position: absolute;
   align-items: center;
   bottom: 100px;
-  width: 1250px;
+  width: 1200px;
   height: 250px;
   object-fit: cover;
   
