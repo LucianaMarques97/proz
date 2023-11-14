@@ -91,7 +91,7 @@ mudarImagem(); // Display the first image immediately
 
 setInterval(() => {
   mudarImagem();
-}, 2000);
+}, 4000);
 }
 
 window.onload = function () {

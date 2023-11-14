@@ -93,12 +93,17 @@ li {
   display: flex;
   border: 100px;
   padding: 120px;
+  margin: 10px 10px auto;
   bottom: 10px;
-  width: 1250px;
+  width: 1200px;
   height: 200px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
   transform: translateX(0); 
+}
+
+#img1{
+  object-fit: fill  !important;
 }
 
 .imagemAnimada{
