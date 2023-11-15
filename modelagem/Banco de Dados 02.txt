@@ -1,0 +1,128 @@
+CREATE TABLE Produto 
+( 
+ ID_Produto serial PRIMARY KEY ,  
+ Cor varchar(10),  
+ Nome varchar(30),  
+ Tamanho varchar(10),  
+ Quantidade INT,  
+ Preço float,  
+ Categoria varchar(10)  
+); 
+
+CREATE TABLE Cliente 
+( 
+ CPF VARCHAR(11) PRIMARY KEY,  
+ Nome varchar(30),  
+ Endereço varchar(30)   
+); 
+
+CREATE TABLE Pedido 
+( 
+ ID_Pedido serial PRIMARY KEY ,  
+ ID_Produto INT, 
+ ID_Carrinho INT,  
+ CPF VARCHAR(11)  
+); 
+
+CREATE TABLE Carrinho 
+( 
+ ID_Carrinho serial PRIMARY KEY ,  
+ ID_Produto INT  
+); 
+
+CREATE TABLE Endereço 
+( 
+ ID_Endereço serial PRIMARY KEY ,  
+ Rua VARCHAR(30),  
+ Número INT,  
+ Bairro VARCHAR(30),  
+ Cidade VARCHAR(30),  
+ Estado VARCHAR(2),  
+ CEP INT,  
+ CPF VARCHAR(11)  
+); 
+
+
+ALTER TABLE pedido 
+add CONSTRAINT fk_cpf FOREIGN key(fk_cpf) REFERENCES cliente(cpf)
+
+ALTER TABLE endereço 
+add CONSTRAINT fk_cpf FOREIGN key(fk_cpf) REFERENCES cliente(cpf)
+
+ALTER TABLE pedido add COLUMN fk_carrinho INT
+
+ALTER TABLE pedido add COLUMN fk_cpf INT
+
+INSERT into produto (cor, nome, tamanho, quantidade, preço, categoria) 
+values
+('Branco', 'BLusa Verão', 'M', 2, 12.90, 'blusa')
+
+select * from produto
+
+SELECT * from carrinho
+
+insert into carrinho (fk_id_produto) VALUES (1)
+
+
+INSERT INTO cliente (cpf, nome)
+VALUES
+  (49985018693,'Dillon Hughes'),
+  (87005462024,'Giacomo Knapp'),
+  (97392822513,'Hilary Calderon'),
+  (14127932797,'Bernard Page'),
+  (30798263623,'Jermaine Jimenez');
+  
+ alter table cliente
+ ALTER TABLE cliente ALTER COLUMN cpf TYPE varchar(11)
+ ALTER TABLE pedido ALTER COLUMN fk_cpf TYPE varchar(11)
+ ALTER TABLE endereço ALTER COLUMN fk_cpf TYPE varchar(11)
+ 
+ alter table endereço drop CONSTRAINT fk_cpf
+ alter table pedido drop CONSTRAINT fk_cpf
+ 
+ SELECT * from endereço
+ 
+ insert into endereço (rua, cidade)
+ VALUES
+  ('748-9507 Maecenas Road','Tarragona'),
+  ('P.O. Box 744, 6729 Libero Road','Port Harcourt'),
+  ('9414 Luctus Avenue','Landau'),
+  ('Ap #714-5111 Aenean Road','Santa Marta'),
+  ('P.O. Box 106, 1815 Ac Rd.','Mission');
+
+UPDATE endereço
+set número = 444, bairro = 'Centro', estado = 'SC', cep = 21000000
+WHERE id_endereço = 5;
+
+
+
+select * from carrinho
+
+insert into produto (categoria)
+VALUES
+  ('blusa'),
+  ('blusa'),
+  ('blusa'),
+  ('blusa'),
+  ('blusa');
+  
+  
+  UPDATE produto
+set categoria = 'blusa'
+WHERE id_produto = 6;
+
+insert into carrinho (fk_id_produto) values (1)
+
+insert into pedido (fk_produto, fk_cpf) values (6, '30798263623')
+
+alter table pedido add COLUMN fk_produto int;
+ALTER TABLE pedido 
+add CONSTRAINT fk_produto FOREIGN key(fk_produto) REFERENCES produto(id_produto)
+
+
+SELECT * from pedido
+
+ALTER TABLE endereço DROP COLUMN cpf;
+ALTER TABLE pedido DROP COLUMN cpf;
+
+SELECT * FROM pedido Where fk_cpf  = '30798263623'
