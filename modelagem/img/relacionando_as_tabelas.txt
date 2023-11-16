@@ -1,0 +1,9 @@
+ALTER TABLE pedido 
+add CONSTRAINT fk_cpf FOREIGN key(fk_cpf) REFERENCES cliente(cpf)
+
+ALTER TABLE endereço 
+add CONSTRAINT fk_cpf FOREIGN key(fk_cpf) REFERENCES cliente(cpf)
+
+ALTER TABLE pedido add COLUMN fk_carrinho INT
+
+ALTER TABLE pedido add COLUMN fk_cpf INT

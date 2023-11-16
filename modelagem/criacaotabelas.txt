@@ -1,0 +1,56 @@
+-- Tabela de Clientes
+CREATE TABLE Clientes (
+    cpf VARCHAR(11) PRIMARY KEY,
+    Nome VARCHAR(50),
+    telefone VARCHAR(15)
+);
+
+
+--------
+
+
+-- Tabela de Endereço
+CREATE TABLE Endereço 
+( 
+ ID_Endereço serial PRIMARY KEY ,  
+ cpf VARCHAR (11),
+ Rua VARCHAR(30),  
+ Número INT,  
+ Bairro VARCHAR(30),  
+ Cidade VARCHAR(30),  
+ Estado VARCHAR(2),  
+ CEP INT,
+ FOREIGN KEY (cpf) REFERENCES Clientes(cpf)
+); 
+
+
+
+-- Tabela de Produtos
+CREATE TABLE Produtos (
+    ProdutoID serial PRIMARY KEY,
+    Cor varchar(10),  
+    Nome varchar(30),  
+    Tamanho varchar(10),  
+    Quantidade INT,  
+    Preço float,  
+    Categoria varchar(10)
+);
+
+-- Tabela de Compras
+CREATE TABLE Compras (
+    CompraID serial PRIMARY KEY,
+    cpf VARCHAR(11),
+    DataCompra DATE,
+    ValorTotal DECIMAL(10, 2),
+    FOREIGN KEY (cpf) REFERENCES Clientes(cpf)
+);
+
+-- Tabela Associativa Produtos_Compras
+CREATE TABLE Produtos_Compras (
+    ProdutoCompraID serial PRIMARY KEY,
+    CompraID INT,
+    ProdutoID INT,
+    Quantidade INT,
+    FOREIGN KEY (CompraID) REFERENCES Compras(CompraID),
+    FOREIGN KEY (ProdutoID) REFERENCES Produtos(ProdutoID)
+);

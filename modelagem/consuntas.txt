@@ -1,0 +1,69 @@
+
+-- consultando um cpf
+
+SELECT *
+FROM Compras
+WHERE cpf = '23456789012';
+
+SELECT *
+FROM clientes
+WHERE cpf = '23456789012';
+
+SELECT *
+FROM "endereço"
+WHERE id_endereço = 1;
+
+-- cconsulta o total de vendas da loja
+SELECT SUM(ValorTotal) AS TotalVendas
+FROM Compras;
+
+-- consultando o total de compras por cpf
+SELECT cpf, SUM(ValorTotal) AS TotalVendas
+FROM Compras
+GROUP BY cpf;
+
+
+-- traz as informações de endereço e informações do cliente e data da compra e valor total por cpf
+SELECT
+ c. cpf,
+  c.Nome,
+  c.Telefone,
+  e.Rua,
+  e.Número,
+  e.Bairro,
+  e.Cidade,
+  e.Estado,
+  e.CEP,
+  cp.DataCompra,
+  cp.ValorTotal
+FROM
+  Clientes c
+  LEFT JOIN Endereço e ON c.cpf = e.cpf
+  LEFT JOIN Compras cp ON c.cpf = cp.cpf
+WHERE
+  c.cpf = '34567890123';
+-- 
+
+
+
+-- traz as informações de compra do cliente com produtos quantidade etc
+
+SELECT
+  c.cpf,
+  c.nome,
+  cp.CompraID,
+  cp.DataCompra,
+  cp.ValorTotal,
+  pc.ProdutoID,
+  pc.Quantidade,
+  p.Nome,
+  p.Tamanho,
+  p.Cor,
+  p.Preço
+FROM
+  Clientes c
+  LEFT JOIN Compras cp ON c.cpf = cp.cpf
+  JOIN Produtos_Compras pc ON cp.CompraID = pc.CompraID
+  JOIN Produtos p ON pc.ProdutoID = p.ProdutoID
+WHERE
+  c.cpf = '34567890123';

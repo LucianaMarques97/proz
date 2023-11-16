@@ -1,0 +1,109 @@
+
+------------- povoando clientes
+
+INSERT INTO Clientes (cpf, Nome, telefone)
+VALUES ('12345678900', 'Erica Carvalho', '(21) 99999-9999');
+
+INSERT INTO Clientes (cpf, Nome, telefone)
+VALUES ('98765432100', 'Fernando Cavalcante', '(11) 98888-8888');
+
+INSERT INTO Clientes (cpf, Nome, telefone)
+VALUES ('09876543210', 'Abel Silva', '(31) 97777-7777'),
+('12345678901', 'João da Silva', '(21) 99999-9999'),
+('23456789012', 'Maria Souza', '(21) 88888-8888'),
+('34567890123', 'José Santos', '(21) 77777-7777'),
+('45678901234', 'Ana Paula', '(21) 66666-6666'),
+('56789012345', 'Pedro Pereira', '(21) 55555-5555');
+
+
+
+--------------
+
+
+
+INSERT INTO Endereço (cpf, Rua, Número, Bairro, Cidade, Estado, CEP)
+VALUES ('12345678900', 'Rua da Paz', 123, 'Bairro da Paz', 'Rio de Janeiro', 'RJ', 21040-000);
+
+INSERT INTO Endereço (cpf, Rua, Número, Bairro, Cidade, Estado, CEP)
+VALUES ('98765432100', 'Rua da Felicidade', 456, 'Bairro da Felicidade', 'São Paulo', 'SP', 01234-567);
+
+INSERT INTO Endereço (cpf, Rua, Número, Bairro, Cidade, Estado, CEP)
+VALUES ('09876543210', 'Rua da Alegria', 789, 'Bairro da Alegria', 'Belo Horizonte', 'MG', 31456-789),
+('12345678901', 'Rua da Paz', 123, 'Jardim da Paz', 'Rio de Janeiro', 'RJ', 22222-000),
+('23456789012', 'Rua da Felicidade', 456, 'Bairro Feliz', 'São Paulo', 'SP', 33333-000),
+('34567890123', 'Rua da Alegria', 789, 'Bairro Alegre', 'Belo Horizonte', 'MG', 44444-000),
+('45678901234', 'Rua da Esperança', 1011, 'Bairro Esperançoso', 'Salvador', 'BA', 55555-000),
+('56789012345', 'Rua da Vitória', 1234, 'Bairro Vitorioso', 'Fortaleza', 'CE', 66666-000);
+
+--------------
+
+
+INSERT INTO Produtos (Cor, Nome, Tamanho, Quantidade, Preço, Categoria)
+VALUES ('Vermelho', 'Blusa verão', 'P', 10, 50.00, 'Blusa');
+
+INSERT INTO Produtos (Cor, Nome, Tamanho, Quantidade, Preço, Categoria)
+VALUES ('Azul', 'Calça Jeans', '38', 20, 112.00, 'Calça');
+
+INSERT INTO Produtos (Cor, Nome, Tamanho, Quantidade, Preço, Categoria)
+VALUES ('Preto', 'Tênis', '39', 50, 143.00, 'Sapato');
+
+--------------- Povoando produtos
+
+-- Calças
+INSERT INTO Produtos (Cor, Nome, Tamanho, Quantidade, Preço, Categoria)
+VALUES
+('Preto', 'Calça Jeans', '38', 10, 150.00, 'Calças'),
+('Azul', 'Calça Jeans inverno', '40', 10, 170.00, 'Calças'),
+('Vermelho', 'Calça Legging ', 'M', 10, 120.00, 'Calças'),
+('Bege', 'Calça Cargo ', 'L', 10, 130.00, 'Calças');
+
+-- Blusas
+INSERT INTO Produtos (Cor, Nome, Tamanho, Quantidade, Preço, Categoria)
+VALUES
+('Branco', 'Blusa Polo ', 'M', 10, 100.00, 'Blusas'),
+('Preto', 'Blusa T-shirt ', 'G', 10, 80.00, 'Blusas'),
+('Vermelho', 'Blusa Moletom ', 'GG', 10, 90.00, 'Blusas'),
+('Amarelo', 'Blusa Manga Longa', 'P', 10, 70.00, 'Blusas');
+
+
+-- Sapatos
+INSERT INTO Produtos (Cor, Nome, Tamanho, Quantidade, Preço, Categoria)
+VALUES
+('Preto', 'Sapato Social', '40', 10, 200.00, 'Sapato'),
+('Marrom', 'Sapato Oxford', '38', 10, 180.00, 'Sapato'),
+('Branco', 'Sapatilha', '37', 10, 150.00, 'Sapato'),
+('Azul', 'Tênis Esportivo Unissex', '39', 10, 120.00, 'Sapato');
+
+
+--------------- Povoando compras 
+
+INSERT INTO Compras (cpf, DataCompra, ValorTotal)
+VALUES
+('12345678901', '2023-07-20', 1200.00),
+('23456789012', '2023-07-21', 1500.00),
+('34567890123', '2023-07-22', 1800.00),
+('45678901234', '2023-07-23', 2100.00),
+('56789012345', '2023-07-24', 2400.00);
+
+--------------- Povoando a tabela produtos_compras
+
+-- Inserir os produtos comprados em cada compra
+
+-- Compra 1
+INSERT INTO Produtos_Compras (CompraID, ProdutoID, Quantidade)
+VALUES
+(1, 1, 1),
+(1, 2, 2),
+(1, 3, 3),
+(2, 4, 1),
+(2, 5, 2),
+(2, 6, 3),
+(3, 7, 1),
+(3, 8, 2),
+(3, 9, 3),
+(4, 10, 1),
+(4, 11, 2),
+(4, 12, 3),
+(5, 7, 1),
+(5, 9, 2),
+(5, 11, 3);
