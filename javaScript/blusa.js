@@ -100,6 +100,9 @@ function produtoSelecionado() {
  <p>Cor </p><span>${cor}</span>
  <p>R$ </p><span>${valor}</span>
  <a class="botao-comprar" href="../html/carrinho.html">Comprar</a>
+  
+  <a class=" carrinho-btn" href="../html/carrinho.html"><img src="../img/carrinho.svg" alt="" srcset="" id="carrinhoBtn"></a>
+ 
 </div>`
 
   return teste

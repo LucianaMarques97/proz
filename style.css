@@ -558,6 +558,11 @@ footer p {
 }
 
 
+.carrinho-btn,.carrinho-btn img{
+  width: 45px!important;
+  height: 45px!important;
+  margin-top: 4px;
+}
 
 
 
