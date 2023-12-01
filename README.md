@@ -5,7 +5,7 @@
 - [Projeto no Figman](https://www.figma.com/file/QjycbquBgouZwyXWBTLxae/Gruppo-8-Projeto-int-1?type=design&node-id=0%3A1&mode=design&t=Ff2c5hzVPMUUfwDz-1)
 
 ## Link do Site
-- [Lu Modas](http://127.0.0.1:5500/home.html)
+- [Lu Modas](https://lu-modas.vercel.app/)
 
 ## Desenvolvedores:
 * Luciana Marques
